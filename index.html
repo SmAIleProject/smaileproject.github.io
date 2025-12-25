@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmAIle Project | AI e-HUB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Specific styles for the Hub Landing Page */
+        .hub-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+        }
+        .hub-intro .tagline {
+            font-size: 1.3rem;
+            color: var(--text-dark);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .hub-intro p {
+            font-size: 1.15rem;
+            color: var(--text-light);
+        }
+        
+        /* Navigation Grid */
+        .hub-buttons {
+            display: grid;
+            gap: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .hub-buttons .btn {
+            width: 100%;
+            text-align: center;
+            padding: 18px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Project Context Section */
+        .project-details {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid var(--border-color);
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            padding: 30px;
+        }
+        .project-details h3 {
+            text-align: center;
+            color: var(--brand);
+            font-family: 'Merriweather', serif;
+            margin-bottom: 25px;
+        }
+        .project-details p {
+            margin-bottom: 15px;
+        }
+        .highlight-box {
+            background-color: var(--background-light); /* using theme blue tint */
+            border-left: 4px solid var(--brand);
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+    </style>
+</head>
+<body class="landing">
+
+    <div class="container">
+        <div class="brand">
+            <img class="brand-logo" src="logo_smaile.avif" alt="SmAIle logo">
+        </div>
+        <h1>SmAIle Project</h1>
+        
+        <div class="hub-intro">
+            <div class="tagline">Scenarios and MOOCs for AI Literacy in Education</div>
+            <p>Revolutionising educational practices by advocating for the ethical, safe, and inclusive use of Artificial Intelligence in schools.</p>
+        </div>
+
+        <div class="hub-buttons">
+            <a href="scenarios.html" class="btn btn-debate">
+                1. AI Toolkit & Learning Scenarios
+            </a>
+            
+            <a href="moocs.html" class="btn btn-learns">
+                2. MOOCs (Courses for Teachers & Students)
+            </a>
+
+            <a href="materials.html" class="btn btn-bite">
+                3. Educational Materials & Tutorials
+            </a>
+        </div>
+
+        <div class="project-details">
+            <h3>About the AI e-HUB</h3>
+            
+            <p>
+                Welcome to the <strong>SmAIle AI e-HUB</strong>, a central sustainable platform designed to develop core competencies in both teachers and students. Co-funded by the Erasmus+ Programme and developed by partners from five European countries, this project addresses the urgent need for ethical AI literacy in education.
+            </p>
+
+            <p>
+                Whether you are a teacher looking for a <em>"Learning Scenario"</em> to integrate into your class, or a student ready to take on an <em>"AI Challenge,"</em> this open educational resource is for you.
+            </p>
+        </div>
+
+        <div class="site-note">
+            <img class="eu-mark" src="logo_eu.avif" alt="Co-funded by the European Union">
+            <span>Co-funded by the European Union • 2024-1-HR01-KA220-SCH-000254267</span>
+        </div>
+    </div>
+
+</body>
+</html>
