@@ -673,3 +673,56 @@ body.scenario-food {
     --btn-start: #0066ff;
     --btn-end: #00d1ff;
 }
+
+/* --- TBD / Coming Soon Styles --- */
+
+/* The TBD Button Style */
+.btn.tbd {
+    /* 1. Keep the original shape & color, just dim it */
+    opacity: 0.6;                
+    filter: grayscale(0.3);      /* Slightly wash out the color */
+    
+    /* 2. Positioning for the badge */
+    position: relative;          
+    overflow: visible;           /* Allow badge to stick out of the corner */
+    
+    /* 3. Interaction */
+    cursor: help;                /* Shows a '?' cursor to indicate it's special */
+}
+
+.btn.tbd:hover {
+    /* Slight lift on hover, but less than active buttons */
+    transform: translateY(-2px); 
+    opacity: 0.8;
+    filter: grayscale(0);        /* Bring color back on hover */
+}
+
+/* The "TBD" Badge (Mini Version) */
+.btn.tbd::after {
+    content: "TBD";
+    position: absolute;
+    
+    /* Position: Tucked tightly in the corner */
+    top: -5px;
+    right: -5px;
+    
+    /* Size: Force it to fit content only */
+    width: auto;
+    height: auto;
+    padding: 2px 4px;      /* Minimal padding */
+    line-height: 1;        /* Prevents extra height */
+    
+    /* Visuals */
+    background-color: #333;
+    color: #fff;
+    font-size: 0.7rem;     /* Kept as requested */
+    font-weight: 900;
+    border-radius: 3px;
+    
+    /* Styling */
+    border: 1px solid #fff; /* Thinner border */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    transform: rotate(0deg); /* Removed rotation to keep it neat */
+    z-index: 10;
+}
+
