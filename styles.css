@@ -726,3 +726,59 @@ body.scenario-food {
     z-index: 10;
 }
 
+/* Infographic Grid Layout */
+.infographic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.info-card {
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.info-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.info-card h4 {
+    color: var(--brand);
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+/* Reusing your existing button styles for the download links */
+.info-card .btn {
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+.info-card a img {
+    cursor: zoom-in;
+    transition: opacity 0.2s;
+}
+
+.info-card a img:hover {
+    opacity: 0.9;
+}

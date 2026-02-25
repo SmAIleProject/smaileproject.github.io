@@ -4,28 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational Materials | SmAIle Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Specific styles for the Infographic Library */
+        .hub-intro {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            border-left: 5px solid var(--brand);
+        }
+        .hub-intro .tagline {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--brand);
+            margin-bottom: 10px;
+        }
+        .resource-section {
+            margin-top: 40px;
+        }
+        .resource-section h3 {
+            font-family: 'Merriweather', serif;
+            color: var(--brand);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        .infographic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .info-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        /* Clickable image styles */
+        .info-card a img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            cursor: zoom-in;
+            transition: opacity 0.2s;
+        }
+        .info-card a img:hover {
+            opacity: 0.85;
+        }
+        .info-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+            flex-grow: 0;
+        }
+        .info-card p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .info-card .btn {
+            font-size: 0.85rem;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body class="scenario-page">
     <a href="index.html" class="back-link">← Back to Hub</a>
+    
     <div class="container">
         <div class="hero">
-            <h1>Educational Materials</h1>
-            <p class="sub">Resources for Teachers</p>
+            <h1>Educational Materials & Infographics</h1>
+            <p class="sub">SmAIle Visual Library</p>
         </div>
-        <div class="info-block">
-            <p><strong>Status:</strong> Coming Soon</p>
+
+        <section class="hub-intro">
+            <p class="tagline">Welcome to the SmAIle Visual Library</p>
+            <p>Exploring Artificial Intelligence doesn't have to be overwhelming. As part of our commitment to accessible open educational resources (OER), the SmAIle project team has developed a comprehensive series of infographics and visual tutorials. They embody our core "3E" approach—focusing on the intersection of <strong>Ethics, Environment, and Education</strong>.</p>
+        </section>
+
+        <div class="resource-section">
+            <h3>Section 1: Foundations & Philosophy</h3>
+            <div class="infographic-grid">
+                <div class="info-card">
+                    <a href="assets/infographics/AI_Evolution.png"><img src="assets/thumbnails/thumb_AI_Evolution.png" alt="Evolution of AI"></a>
+                    <h4>The Evolution of AI</h4>
+                    <p>A timeline of discovery from the Turing Test to Generative AI.</p>
+                    <a href="assets/infographics/AI_Evolution.pdf" class="btn btn-bite" download>Download PDF</a>
+                </div>
+                <div class="info-card">
+                    <a href="assets/infographics/3E_AI_Compass.png"><img src="assets/thumbnails/thumb_3E_AI_Compass.png" alt="3E AI Compass"></a>
+                    <h4>The '3E' AI Compass</h4>
+                    <p>Our guiding philosophy: Ethics, Environment, and Empowered Learning.</p>
+                    <a href="assets/infographics/3E_AI_Compass.pdf" class="btn btn-bite" download>Download PDF</a>
+                </div>
+            </div>
         </div>
-        <p>We are curating a selection of educational materials. Please check back later!</p>        <div class="site-note" style="padding: 20px; text-align: center; font-family: sans-serif;">
+
+        <div class="resource-section">
+            <h3>Section 2: Digital Citizenship & Safety</h3>
+            <div class="infographic-grid">
+                <div class="info-card">
+                    <a href="assets/infographics/Safe_and_Ethical_AI.png"><img src="assets/thumbnails/thumb_Safe_and_Ethical_AI.png" alt="Safe and Ethical AI"></a>
+                    <h4>Safety & Ethical Use</h4>
+                    <p>Protecting data and maintaining academic integrity in the classroom.</p>
+                    <a href="assets/infographics/Safe_and_Ethical_AI.pdf" class="btn btn-debate" download>Download PDF</a>
+                </div>
+                <div class="info-card">
+                    <a href="assets/infographics/AI_Environment.png"><img src="assets/thumbnails/thumb_AI_Environment.png" alt="AI and Environment"></a>
+                    <h4>AI and the Environment</h4>
+                    <p>Ecological footprints and AI's role in climate solutions.</p>
+                    <a href="assets/infographics/AI_Environment.pdf" class="btn btn-debate" download>Download PDF</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-section">
+            <h3>Section 3: Practical Tutorials by Subject</h3>
+            <div class="infographic-grid">
+                <div class="info-card">
+                    <a href="assets/infographics/AI_Art_and_Music.png"><img src="assets/thumbnails/thumb_AI_Art_and_Music.png" alt="AI Art and Music"></a>
+                    <h4>AI in the Creative Classroom</h4>
+                    <p>Using AI as a muse for visual arts and a co-composer for music.</p>
+                    <a href="assets/infographics/AI_Art_and_Music.pdf" class="btn btn-arts" download>Download PDF</a>
+                </div>
+                <div class="info-card">
+                    <a href="assets/infographics/AI_Stem.png"><img src="assets/thumbnails/thumb_AI_Stem.png" alt="AI in STEM"></a>
+                    <h4>AI in STEM Classes</h4>
+                    <p>Conceptualize theories, assist in coding, and analyze complex data.</p>
+                    <a href="assets/infographics/AI_Stem.pdf" class="btn btn-learns" download>Download PDF</a>
+                </div>
+                <div class="info-card">
+                    <a href="assets/infographics/AI_Storytelling.png"><img src="assets/thumbnails/thumb_AI_Storytelling.png" alt="AI Storytelling"></a>
+                    <h4>Language & Storytelling</h4>
+                    <p>Using chatbots for conversation practice and creative writing.</p>
+                    <a href="assets/infographics/AI_Storytelling.pdf" class="btn btn-story" download>Download PDF</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-section">
+            <h3>Section 4: Empowering Educators & Inclusion</h3>
+            <div class="infographic-grid">
+                <div class="info-card">
+                    <a href="assets/infographics/AI_Teachers.png"><img src="assets/thumbnails/thumb_AI_Teachers.png" alt="AI as Teacher Assistant"></a>
+                    <h4>AI as Teacher’s Assistant</h4>
+                    <p>Automate administration and accelerate lesson planning.</p>
+                    <a href="assets/infographics/AI_Teachers.pdf" class="btn btn-training" download>Download PDF</a>
+                </div>
+                <div class="info-card">
+                    <a href="assets/infographics/AI_Inclusive.png"><img src="assets/thumbnails/thumb_AI_Inclusive.png" alt="AI for Inclusion"></a>
+                    <h4>AI for Inclusive Education</h4>
+                    <p>Adaptive tools for SEN, dyslexia, ADHD, and sensory impairments.</p>
+                    <a href="assets/infographics/AI_Inclusive.pdf" class="btn btn-training" download>Download PDF</a>
+                </div>
+                <div class="info-card">
+                    <a href="assets/infographics/AI_Tools.png"><img src="assets/thumbnails/thumb_AI_Tools.png" alt="AI Apps Map"></a>
+                    <h4>AI Apps Treasure Map</h4>
+                    <p>A curated map of the best free AI tools for the classroom.</p>
+                    <a href="assets/infographics/AI_Tools.pdf" class="btn btn-training" download>Download PDF</a>
+                </div>
+                <div class="info-card">
+                    <a href="assets/infographics/AI_Teacher_Guide.png"><img src="assets/thumbnails/thumb_AI_Teacher_Guide.png" alt="AI Teaching Guide"></a>
+                    <h4>AI Teaching Guidelines</h4>
+                    <p>Choose your path: from AI beginner to advanced user.</p>
+                    <a href="assets/infographics/AI_Teacher_Guide.pdf" class="btn btn-training" download>Download PDF</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-note" style="padding: 20px; text-align: center; font-family: sans-serif; margin-top: 60px; border-top: 1px solid var(--border-color);">
             <div class="logos" style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-bottom: 12px;">
-                
                 <img class="eu-mark" src="attachments/logo_eu.svg" alt="Co-funded by the European Union" style="height: 45px; width: auto; display: block;">
-                
                 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" style="text-decoration: none; display: block;">
                     <img alt="Creative Commons License" style="border-width:0; height: 35px; width: auto; display: block;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
                 </a>
             </div>
-            
             <div class="copyright-text">
                 <span style="font-size: 0.7rem; color: #444;">
                     Co-founded by the Erasmus+ Programme of the European Union • 2024-1-HR01-KA220-SCH-000254267
