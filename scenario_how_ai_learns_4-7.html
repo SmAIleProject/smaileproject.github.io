@@ -197,5 +197,25 @@
             </div>
         </div>
     </div>
+    <script>
+        // Automatic PDF Download Tracker for GoatCounter
+        document.addEventListener('click', function(event) {
+            // Find if the clicked element (or its parent) is a link
+            var target = event.target.closest('a');
+            if (!target) return;
+
+            // Check if the link points to a PDF
+            if (target.href.match(/\.pdf$/i)) {
+                // Send the event to GoatCounter
+                if (window.goatcounter && window.goatcounter.count) {
+                    window.goatcounter.count({
+                        path: 'pdf-download: ' + target.getAttribute('href'),
+                        title: 'PDF Downloaded',
+                        event: true
+                    });
+                }
+            }
+        });
+    </script>
 </body>
 </html>
