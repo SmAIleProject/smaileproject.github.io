@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script data-goatcounter="https://smaileproject.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </head>
 <body class="landing">
 
@@ -81,5 +83,25 @@
             </div>
         </div>
     </div>
+    <script>
+        // Automatic PDF Download Tracker for GoatCounter
+        document.addEventListener('click', function(event) {
+            // Find if the clicked element (or its parent) is a link
+            var target = event.target.closest('a');
+            if (!target) return;
+
+            // Check if the link points to a PDF
+            if (target.href.match(/\.pdf$/i)) {
+                // Send the event to GoatCounter
+                if (window.goatcounter && window.goatcounter.count) {
+                    window.goatcounter.count({
+                        path: 'pdf-download: ' + target.getAttribute('href'),
+                        title: 'PDF Downloaded',
+                        event: true
+                    });
+                }
+            }
+        });
+    </script>
 </body>
 </html>
