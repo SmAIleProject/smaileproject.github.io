@@ -4,7 +4,7 @@
 PUBLIC_BRANCH="public"
 WORK_BRANCH="main"
 REMOTE_NAME="origin"
-REMOTE_BRANCH="main" # The branch name on GitHub
+REMOTE_BRANCH="gh-pages" # The branch name on GitHub
 
 echo "-------------------------------------------------------"
 echo "ERASMUS+ PROJECT: WEBSITE PUBLISHING TOOL"
