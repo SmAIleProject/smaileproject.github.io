@@ -1,0 +1,168 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage{lato}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in, headheight=1.5cm, headsep=0.5cm, footskip=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\tcbuselibrary{skins, breakable}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% --- Colors (Theme: Purple for Debate) ---
+\definecolor{SmailePurple}{HTML}{8B5CF6} % Custom Purple
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileGreen}{HTML}{92D050}
+\definecolor{SmaileOrange}{HTML}{ED7D31}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightPurple}{HTML}{F3E8FF}
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+
+% --- Settings ---
+\tcbset{colback=white, colframe=SmaileGray, fonttitle=\bfseries}
+\hypersetup{colorlinks=true, linkcolor=SmailePurple, urlcolor=SmailePurple}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.2cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}}
+\fancyfoot[R]{\footnotesize Page \thepage}
+
+% --- Title Formats ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{SmailePurple}}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SmaileGray}}{Phase \thesubsection:}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{SmaileGray}}{}{0em}{}
+
+% --- Boxes ---
+\newtcolorbox{keyinfobox}{colback=SmaileLightPurple, colframe=SmailePurple, title=Key Information, fonttitle=\bfseries\color{SmailePurple}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}}
+\newtcolorbox{eurobox}{colback=SmaileLightBlue, colframe=SmaileBlue, title=European Dimension / Erasmus+ Connection, fonttitle=\bfseries\color{SmaileBlue}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}, breakable}
+
+\begin{document}
+
+\title{\textbf{\color{SmailePurple}Debate: Critical Thinking in the Age of AI}}
+\author{SMaiLE Project}
+\date{}
+\maketitle
+\thispagestyle{plain}
+
+% --- Key Info ---
+\begin{keyinfobox}
+    \begin{description}[leftmargin=*, labelindent=0pt]
+        \item[\bfseries\color{SmailePurple} Target Group:] 8 - 12 y.o.
+        \item[\bfseries\color{SmailePurple} Duration:] 120 min
+    \end{description}
+    \textbf{Key Learning Goals:}
+    \begin{enumerate}
+        \item \textbf{Critical Thinking:} Analyze AI topics from multiple perspectives.
+        \item \textbf{Communication:} Formulate clear arguments and persuasive speeches.
+        \item \textbf{Collaboration:} Work effectively in teams to build strategies.
+        \item \textbf{Ethical Awareness:} Identify benefits and risks of AI technology.
+    \end{enumerate}
+\end{keyinfobox}
+
+% --- Outcomes ---
+\section*{Learning Outcomes}
+Students will be able to:
+
+\subsubsection*{KNOWLEDGE \& UNDERSTANDING:}
+\begin{itemize}
+    \item Define basic AI concepts (algorithms, chatbots).
+    \item Identify ethical benefits and risks of AI in daily life.
+    \item Explain different viewpoints on complex issues.
+\end{itemize}
+
+\subsubsection*{SKILLS \& ABILITIES:}
+\begin{itemize}
+    \item Conduct basic research using safe sources.
+    \item Present arguments clearly and listen respectfully to others.
+    \item Distinguish between facts and opinions.
+\end{itemize}
+
+\subsubsection*{ATTITUDES \& VALUES:}
+\begin{itemize}
+    \item Demonstrate curiosity about technology's impact.
+    \item Value respectful dialogue and democratic engagement.
+\end{itemize}
+
+% --- EU Connection ---
+\begin{eurobox}
+\begin{itemize}
+    \item \textbf{Civic Engagement:} Encourages active participation in social discussions.
+    \item \textbf{Digital Citizenship:} Prepares students to be responsible users of technology.
+    \item \textbf{Critical Thinking:} A key competence for the 21st century.
+\end{itemize}
+\end{eurobox}
+
+\newpage
+% --- Resources ---
+\section{Resources and Tools}
+\begin{itemize}
+    \item \textbf{Guidance:} "Understanding Team Policy Debate" Infographic (provided).
+    \item \textbf{Presentation:} Team Policy Debate PPT (provided).
+    \item \textbf{Assessment:} Judging Rubric and Self-Evaluation Form (provided).
+    \item \textbf{Tech:} Laptops for research, Padlet for audience participation.
+\end{itemize}
+
+% --- Activity Overview ---
+\section*{Activity Overview}
+\begingroup
+\small
+\begin{tabularx}{\textwidth}{|l|l|L|}
+    \hline
+    \rowcolor{SmaileLightPurple} \textbf{Phase} & \textbf{Time} & \textbf{Activity} \\ \hline
+    Intro & 15 min & \textbf{What is Debate?} Explaining rules and roles (Affirmative/Negative). Introduction of Topics. \\ \hline
+    Prep & 45 min & \textbf{Research \& Strategy:} Teams research evidence and prepare arguments. \\ \hline
+    Debate & 45 min & \textbf{The Debate:} Structured rounds of speeches, crossfire questions, and rebuttals. \\ \hline
+    Reflect & 15 min & \textbf{Evaluation:} Judges score, Audience votes, Students self-evaluate. \\ \hline
+\end{tabularx}
+\endgroup
+
+% --- Activities ---
+\section{Introduction and Motivation}
+\textbf{Goal:} Understand the debate format.
+\begin{itemize}
+    \item \textbf{Structure:} Explain the roles using the Infographic.
+    \item \textbf{Topics:}
+    \begin{enumerate}
+        \item "Should AI cameras monitor students in schools?"
+        \item "Do Chatbot assistants make students less creative?"
+    \end{enumerate}
+\end{itemize}
+
+\section{Research and Learning}
+\textbf{Goal:} Build a strong case.
+\begin{itemize}
+    \item Teams conduct research to find facts and evidence.
+    \item \textbf{Affirmative:} Focus on benefits (safety, efficiency).
+    \item \textbf{Negative:} Focus on risks (privacy, dependency).
+    \item Teams prepare their Opening Statements.
+\end{itemize}
+
+\section{The Debate (Creative Application)}
+\textbf{Goal:} Present and persuade.
+\begin{itemize}
+    \item \textbf{Constructive Speeches (5 min):} Each team presents their main points.
+    \item \textbf{Crossfire (5 min):} Teams ask each other questions.
+    \item \textbf{Rebuttal \& Closing (5 min):} Respond to opponents and summarize.
+\end{itemize}
+
+\section{Reflection and Evaluation}
+\textbf{Goal:} Assessment and feedback.
+\begin{itemize}
+    \item \textbf{Judges:} Use the Rubric to score arguments (30\%), evidence (25\%), and delivery (20\%).
+    \item \textbf{Audience:} Share thoughts and vote on Padlet.
+    \item \textbf{Self-Eval:} Students complete the reflection form.
+\end{itemize}
+
+\end{document}

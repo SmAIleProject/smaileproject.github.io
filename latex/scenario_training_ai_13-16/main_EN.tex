@@ -1,0 +1,170 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage{lato}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in, headheight=1.5cm, headsep=0.5cm, footskip=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\tcbuselibrary{skins, breakable}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% --- Colors (Theme: Orange for Training) ---
+\definecolor{SmaileOrange}{HTML}{ED7D31}
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileGreen}{HTML}{92D050}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightOrange}{HTML}{FEF3E9}
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+
+% --- Settings ---
+\tcbset{colback=white, colframe=SmaileGray, fonttitle=\bfseries}
+\hypersetup{colorlinks=true, linkcolor=SmaileOrange, urlcolor=SmaileOrange}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.2cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}}
+\fancyfoot[R]{\footnotesize Page \thepage}
+
+% --- Title Formats ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{SmaileOrange}}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SmaileGray}}{Activity \thesubsection:}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{SmaileGray}}{}{0em}{}
+
+% --- Boxes ---
+\newtcolorbox{keyinfobox}{colback=SmaileLightOrange, colframe=SmaileOrange, title=Key Information, fonttitle=\bfseries\color{SmaileOrange}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}}
+\newtcolorbox{eurobox}{colback=SmaileLightBlue, colframe=SmaileBlue, title=European Dimension / Erasmus+ Connection, fonttitle=\bfseries\color{SmaileBlue}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}, breakable}
+
+\begin{document}
+
+\title{\textbf{\color{SmaileOrange}Training AI: Science \& Data}}
+\author{SMaiLE Project}
+\date{}
+\maketitle
+\thispagestyle{plain}
+
+% --- Key Info ---
+\begin{keyinfobox}
+    \begin{description}[leftmargin=*, labelindent=0pt]
+        \item[\bfseries\color{SmaileOrange} Target Group:] 13 - 16 y.o.
+        \item[\bfseries\color{SmaileOrange} Duration:] 4-5 lessons (45 min each)
+    \end{description}
+    \textbf{Key Learning Goals:}
+    \begin{enumerate}
+        \item \textbf{Scientific Reasoning:} Deepen understanding of classification concepts using AI.
+        \item \textbf{Critical Thinking:} Evaluate AI limitations and the role of human judgment.
+        \item \textbf{Digital Literacy:} Train models using Teachable Machine and analyze data quality.
+        \item \textbf{Ethical Awareness:} Reflect on the implications of AI in scientific contexts.
+    \end{enumerate}
+\end{keyinfobox}
+
+% --- Outcomes ---
+\section*{Learning Outcomes}
+By the end of the project, students will be able to:
+
+\subsubsection*{KNOWLEDGE \& UNDERSTANDING:}
+\begin{itemize}
+    \item Describe machine learning concepts (training, testing, datasets).
+    \item Identify sources of error and bias in AI models.
+    \item Recognize ethical considerations like trust and responsibility.
+\end{itemize}
+
+\subsubsection*{SKILLS \& ABILITIES:}
+\begin{itemize}
+    \item Collect and label datasets effectively.
+    \item Use Teachable Machine to create predictive models.
+    \item Collaborate in teams to design experiments and analyze results.
+\end{itemize}
+
+\subsubsection*{ATTITUDES \& VALUES:}
+\begin{itemize}
+    \item Appreciate the synergy between human insight and technology.
+    \item Demonstrate openness to diverse perspectives in scientific discussions.
+\end{itemize}
+
+% --- EU Connection ---
+\begin{eurobox}
+\begin{itemize}
+    \item \textbf{Scientific Citizenship:} Engaging in real-world scientific inquiry and debate.
+    \item \textbf{Digital Responsibility:} Promoting ethical data practices.
+    \item \textbf{Collaboration:} Opportunities for sharing datasets with European peers.
+\end{itemize}
+\end{eurobox}
+
+\newpage
+% --- Resources ---
+\section{Resources and Tools}
+\begin{itemize}
+    \item \textbf{Digital Tools:} Teachable Machine, eTwinning, Padlet.
+    \item \textbf{Hardware:} Computers/Tablets with webcams.
+    \item \textbf{Materials:} Physical objects for classification (rocks, leaves, etc.), Worksheets.
+\end{itemize}
+
+% --- Activity Overview ---
+\section*{Activity Overview}
+\begingroup
+\small
+\begin{tabularx}{\textwidth}{|l|l|L|}
+    \hline
+    \rowcolor{SmaileLightOrange} \textbf{Activity} & \textbf{Time} & \textbf{Description} \\ \hline
+    Intro & 20 min & \textbf{AI in Science:} Discussion on how Machine Learning supports scientific research. \\ \hline
+    1 & 45 min & \textbf{The Human Algorithm:} Manual classification of objects to understand the human process. \\ \hline
+    2 & 45 min & \textbf{Collecting Data:} Fieldwork to capture and label diverse images for the dataset. \\ \hline
+    3 & 45 min & \textbf{Training the Model:} Using Teachable Machine to train and test the AI. \\ \hline
+    4 & 45 min & \textbf{Ethics \& Debate:} "Can AI replace lab scientists?" Critical analysis and reflection. \\ \hline
+\end{tabularx}
+\endgroup
+
+% --- Activities ---
+\section{Introduction: AI in Science}
+\textbf{Goal:} Contextualize AI as a tool.
+\begin{itemize}
+    \item \textbf{Discussion:} How does AI identify a star or a cell?
+    \item \textbf{Concept:} It learns from examples provided by humans.
+\end{itemize}
+
+\section{Activity 1: The Human Algorithm}
+\textbf{Goal:} Understand classification logic.
+\begin{itemize}
+    \item \textbf{Task:} Students are given a set of objects (e.g., various rocks).
+    \item \textbf{Action:} Create rules to classify them manually.
+    \item \textbf{Reflection:} How did you decide? What features did you look for?
+\end{itemize}
+
+\section{Activity 2: Collecting Data}
+\textbf{Goal:} Building a robust dataset.
+\begin{itemize}
+    \item \textbf{Task:} Teams capture photos of their assigned category.
+    \item \textbf{Focus:} Quality and diversity (lighting, background) to avoid bias.
+    \item \textbf{Output:} A folder of labeled images.
+\end{itemize}
+
+\section{Activity 3: Training the Model}
+\textbf{Goal:} Practical Machine Learning.
+\begin{itemize}
+    \item \textbf{Tool:} Teachable Machine.
+    \item \textbf{Process:} Upload data -> Train Model -> Test.
+    \item \textbf{Analysis:} Present new objects. Does the AI recognize them? Identify false positives/negatives.
+\end{itemize}
+
+\section{Activity 4: Ethics \& Debate}
+\textbf{Goal:} Critical thinking.
+\begin{itemize}
+    \item \textbf{Debate Topic:} "Can AI replace human lab scientists?"
+    \item \textbf{Discussion:} Reliability, responsibility for errors, and the need for human oversight.
+    \item \textbf{Evaluation:} Students reflect on their learning via Padlet and peer feedback forms.
+\end{itemize}
+
+\end{document}

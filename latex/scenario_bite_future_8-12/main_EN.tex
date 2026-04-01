@@ -1,0 +1,166 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage{lato}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in, headheight=1.5cm, headsep=0.5cm, footskip=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\tcbuselibrary{skins, breakable}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% --- Colors (Theme: Green for Bite of Future) ---
+\definecolor{SmaileGreen}{HTML}{16A34A} % Custom Green
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileOrange}{HTML}{ED7D31}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightGreen}{HTML}{DCFCE7}
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+
+% --- Settings ---
+\tcbset{colback=white, colframe=SmaileGray, fonttitle=\bfseries}
+\hypersetup{colorlinks=true, linkcolor=SmaileGreen, urlcolor=SmaileGreen}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.2cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}}
+\fancyfoot[R]{\footnotesize Page \thepage}
+
+% --- Title Formats ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{SmaileGreen}}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SmaileGray}}{Activity \thesubsection:}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{SmaileGray}}{}{0em}{}
+
+% --- Boxes ---
+\newtcolorbox{keyinfobox}{colback=SmaileLightGreen, colframe=SmaileGreen, title=Key Information, fonttitle=\bfseries\color{SmaileGreen}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}}
+\newtcolorbox{eurobox}{colback=SmaileLightBlue, colframe=SmaileBlue, title=European Dimension / Erasmus+ Connection, fonttitle=\bfseries\color{SmaileBlue}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}, breakable}
+
+\begin{document}
+
+\title{\textbf{\color{SmaileGreen}A Bite of Future}}
+\author{SMaiLE Project}
+\date{}
+\maketitle
+\thispagestyle{plain}
+
+% --- Key Info ---
+\begin{keyinfobox}
+    \begin{description}[leftmargin=*, labelindent=0pt]
+        \item[\bfseries\color{SmaileGreen} Target Group:] 8 - 12 y.o.
+        \item[\bfseries\color{SmaileGreen} Duration:] 120 min
+    \end{description}
+    \textbf{Key Learning Goals:}
+    \begin{enumerate}
+        \item \textbf{Sustainability:} Explore innovative food production (vertical farming, lab-grown meat).
+        \item \textbf{Future Thinking:} Reflect on how to address global food challenges.
+        \item \textbf{Creativity:} Design a healthy, sustainable menu for the future.
+        \item \textbf{Collaboration:} Work in teams to research and share ideas.
+    \end{enumerate}
+\end{keyinfobox}
+
+% --- Outcomes ---
+\section*{Learning Outcomes}
+Students will be able to:
+
+\subsubsection*{KNOWLEDGE \& UNDERSTANDING:}
+\begin{itemize}
+    \item Explain why food is important for health and sustainability.
+    \item Describe different ways food is grown (e.g., aquaponics, vertical farming).
+    \item Recognize that some foods (insects, algae) might be common in the future.
+\end{itemize}
+
+\subsubsection*{SKILLS \& ABILITIES:}
+\begin{itemize}
+    \item Look for simple information about food technology.
+    \item Share ideas and work collaboratively with others.
+    \item Communicate ideas by drawing and talking.
+\end{itemize}
+
+\subsubsection*{ATTITUDES \& VALUES:}
+\begin{itemize}
+    \item Show curiosity about new things.
+    \item Think about being responsible with food and taking care of the planet.
+    \item Listen to other people's ideas.
+\end{itemize}
+
+% --- EU Connection ---
+\begin{eurobox}
+\begin{itemize}
+    \item \textbf{EU Values:} Recognise the importance of solidarity, sustainability, and responsible innovation.
+    \item \textbf{Cultural Diversity:} Demonstrate respect for cultural diversity in food choices.
+    \item \textbf{Active Citizenship:} Promote environmental awareness and responsible consumption.
+\end{itemize}
+\end{eurobox}
+
+\newpage
+% --- Resources ---
+\section{Resources and Tools}
+\begin{itemize}
+    \item \textbf{Research (Websites):} FAO, National Geographic, BBC Future, Our World in Data.
+    \item \textbf{Technology:} Computers or tablets for research.
+    \item \textbf{Art Materials:} Paper, colored pencils, markers (for menu design).
+    \item \textbf{Presentation:} Projector/Smartboard.
+\end{itemize}
+
+% --- Activity Overview ---
+\section*{Activity Overview}
+\begingroup
+\small
+\begin{tabularx}{\textwidth}{|l|l|L|}
+    \hline
+    \rowcolor{SmaileLightGreen} \textbf{Phase} & \textbf{Time} & \textbf{Activity} \\ \hline
+    Activity 1 & 45 min & \textbf{Strange Food of the Future:} Research on Vertical Farming, Insects, Lab-grown meat, etc. \\ \hline
+    Activity 2 & 45 min & \textbf{My Futuristic Menu:} Creative design of a 2050 sustainable menu. \\ \hline
+    Activity 3 & 30 min & \textbf{Reflection:} Presentation, Self-Evaluation, and Feedback. \\ \hline
+\end{tabularx}
+\endgroup
+
+% --- Activities ---
+\section{Strange Food of the Future}
+\textbf{Goal:} Investigate sustainable innovations.
+\begin{itemize}
+    \item \textbf{Hook:} "Imagine it is 2050. What will we eat if there is less land for farming?"
+    \item \textbf{Group Work:} Divide students into teams. Each team researches one topic:
+    \begin{itemize}
+        \item Edible Insects.
+        \item Vertical Farming.
+        \item Lab-Grown Meat.
+        \item 3D Printed Food.
+    \end{itemize}
+    \item \textbf{Task:} Find 3 facts and 1 benefit for the planet.
+\end{itemize}
+
+\section{My Futuristic Menu}
+\textbf{Goal:} Apply knowledge creatively.
+\begin{itemize}
+    \item \textbf{Challenge:} Design a lunch menu for a restaurant in 2050.
+    \item \textbf{Requirements:}
+    \begin{itemize}
+        \item Must be healthy.
+        \item Must use sustainable ingredients (e.g., Algae, Insects, Plant-based).
+        \item Must look delicious (Drawings/Collage).
+    \end{itemize}
+    \item \textbf{Sharing:} Present the menu to the class.
+\end{itemize}
+
+\section{Reflection and Evaluation}
+\textbf{Goal:} Assess understanding and teamwork.
+\begin{itemize}
+    \item \textbf{Self-Evaluation:} Students complete the reflection sheet (Att 4.1.1).
+    \item \textbf{Teacher Rubric:} Evaluate creativity and collaboration (Att 4.1.2).
+    \item \textbf{Discussion:} "Which future food would you try?"
+\end{itemize}
+
+\end{document}

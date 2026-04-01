@@ -1,0 +1,168 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage{lato}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in, headheight=1.5cm, headsep=0.5cm, footskip=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\tcbuselibrary{skins, breakable}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% --- Colors (Theme: Pink/Rose for Arts) ---
+\definecolor{SmailePink}{HTML}{EC4899} % Matching the HTML button
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileGreen}{HTML}{92D050}
+\definecolor{SmaileOrange}{HTML}{ED7D31}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightPink}{HTML}{FDF2F8} % Very light pink for boxes
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+
+% --- Settings ---
+\tcbset{colback=white, colframe=SmaileGray, fonttitle=\bfseries}
+\hypersetup{colorlinks=true, linkcolor=SmailePink, urlcolor=SmailePink}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.2cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}}
+\fancyfoot[R]{\footnotesize Page \thepage}
+
+% --- Title Formats ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{SmailePink}}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SmaileGray}}{Week \thesubsection:}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{SmaileGray}}{}{0em}{}
+
+% --- Boxes ---
+\newtcolorbox{keyinfobox}{colback=SmaileLightPink, colframe=SmailePink, title=Key Information, fonttitle=\bfseries\color{SmailePink}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}}
+\newtcolorbox{eurobox}{colback=SmaileLightBlue, colframe=SmaileBlue, title=European Dimension / Erasmus+ Connection, fonttitle=\bfseries\color{SmaileBlue}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}, breakable}
+
+\begin{document}
+
+\title{\textbf{\color{SmailePink}Virtual Art Exhibition}}
+\author{SMaiLE Project}
+\date{}
+\maketitle
+\thispagestyle{plain}
+
+% --- Key Info ---
+\begin{keyinfobox}
+    \begin{description}[leftmargin=*, labelindent=0pt]
+        \item[\bfseries\color{SmailePink} Target Group:] 4 - 7 y.o.
+        \item[\bfseries\color{SmailePink} Duration:] 4 Weeks (2 sessions/week)
+    \end{description}
+    \textbf{Key Learning Goals:}
+    \begin{enumerate}
+        \item \textbf{Artistic Expression:} Express emotions through colors, shapes, and drawings.
+        \item \textbf{Digital Skills:} Use simple digital tools and AI generators with guidance.
+        \item \textbf{Musical Imagination:} Match music to artwork to change its feeling.
+        \item \textbf{Collaboration:} Share ideas and participate in a class exhibition.
+    \end{enumerate}
+\end{keyinfobox}
+
+% --- Outcomes ---
+\section*{Learning Outcomes}
+By the end of the project, children will be able to:
+
+\subsubsection*{KNOWLEDGE \& UNDERSTANDING:}
+\begin{itemize}
+    \item Recognize styles/colors of famous artists (e.g., Van Gogh, Kandinsky).
+    \item Understand that AI computers can help make pictures.
+    \item Understand how music connects to visual feelings.
+\end{itemize}
+
+\subsubsection*{SKILLS \& ABILITIES:}
+\begin{itemize}
+    \item Use drawing apps (Paint/Canva) to create simple art.
+    \item Explore AI tools to generate images and compare results.
+    \item Talk about their art and explain color choices.
+\end{itemize}
+
+\subsubsection*{ATTITUDES \& VALUES:}
+\begin{itemize}
+    \item Develop cultural curiosity about art.
+    \item Cooperate and show respect for others' work.
+    \item Feel pride in showcasing their creations.
+\end{itemize}
+
+% --- EU Connection ---
+\begin{eurobox}
+\begin{itemize}
+    \item \textbf{Cultural Curiosity:} Introduces European artistic heritage (e.g., Dutch, Spanish, Russian artists).
+    \item \textbf{Creativity Without Borders:} Demonstrates that creativity is a shared language across countries.
+    \item \textbf{Digital Literacy:} Builds foundations for safe, creative technology use.
+    \item \textbf{Inclusion:} Emphasizes that every voice matters through teamwork and sharing.
+\end{itemize}
+\end{eurobox}
+
+\newpage
+% --- Resources ---
+\section{Resources and Tools}
+\begin{itemize}
+    \item \textbf{Traditional:} Paper, crayons, glue, printed art images, emotion charts.
+    \item \textbf{Digital Drawing:} Paint or Canva (basic shapes/brushes).
+    \item \textbf{AI Tools:} Artguru or Leonardo AI (teacher-led generation).
+    \item \textbf{Music:} Google Chrome Music Lab, Suno, or Riffusion.
+    \item \textbf{Presentation:} Projector/Smartboard for the final exhibition.
+\end{itemize}
+
+% --- Activity Overview ---
+\section*{Activity Overview}
+\begingroup
+\small
+\begin{tabularx}{\textwidth}{|l|l|L|}
+    \hline
+    \rowcolor{SmaileLightPink} \textbf{Week} & \textbf{Theme} & \textbf{Activities} \\ \hline
+    Week 1 & Intro to Art & \textbf{Session 1:} "What is Art?" Slideshow \& Emotion Game. \newline \textbf{Session 2:} "Meet the Artists" \& Asking AI about art. \\ \hline
+    Week 2 & Drawing & \textbf{Session 3:} Digital Drawing (Paint/Canva). \newline \textbf{Session 4:} Drawing with AI (Comparing human vs. machine art). \\ \hline
+    Week 3 & Music & \textbf{Session 5:} Finalizing Artworks. \newline \textbf{Session 6:} "What Music Goes with My Picture?" (Matching sound to sight). \\ \hline
+    Week 4 & Exhibition & \textbf{Session 7:} Creating slides/recording voices. \newline \textbf{Session 8:} Gallery Walk \& Celebration. \\ \hline
+\end{tabularx}
+\endgroup
+
+% --- Activities ---
+\section{Week 1: Introduction to Art and AI}
+\textbf{Goal:} Spark curiosity about color, feelings, and machines.
+\begin{itemize}
+    \item \textbf{Art Slideshow:} Show works by Van Gogh or Miró. Ask: "What colors do you see?" "Is it happy or sad?"
+    \item \textbf{Video:} Watch a short "What is AI?" clip. Discuss: "Can a robot paint?"
+    \item \textbf{Activity:} Art Naming Game – children invent fun titles for famous paintings.
+\end{itemize}
+
+\section{Week 2: Drawing Like Artists}
+\textbf{Goal:} Express ideas using digital tools.
+\begin{itemize}
+    \item \textbf{Digital Demo:} Teacher shows how to use simple brushes in Canva/Paint.
+    \item \textbf{Create:} Children make their own version of a famous painting style.
+    \item \textbf{AI Collaboration:} Children describe their drawing to the teacher, who generates an AI version.
+    \item \textbf{Compare:} "What is the same? What is different?"
+\end{itemize}
+
+\section{Week 3: Art and Music Together}
+\textbf{Goal:} Connect sound to visual art.
+\begin{itemize}
+    \item \textbf{Listening Game:} Play happy/sad/spooky music. Ask: "What color is this sound?"
+    \item \textbf{Match:} Children choose a music clip that matches their artwork.
+    \item \textbf{Optional AI Music:} Teacher generates a simple tune based on the child's description (e.g., "Yellow sun music").
+\end{itemize}
+
+\section{Week 4: Sharing and Reflecting}
+\textbf{Goal:} Celebrate achievements.
+\begin{itemize}
+    \item \textbf{Preparation:} Teacher collects drawings and music into a slideshow. Children record a short voice message: "This is my picture..."
+    \item \textbf{Gallery Walk:} The class watches the exhibition together.
+    \item \textbf{Reflection Circle:} "What did you like best?" "Who was more creative, you or the AI?"
+\end{itemize}
+
+\end{document}

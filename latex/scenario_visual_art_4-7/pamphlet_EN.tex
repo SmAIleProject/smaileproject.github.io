@@ -1,0 +1,141 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, landscape, margin=1cm]{geometry}
+\usepackage{multicol}
+\usepackage{lato}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{needspace}
+\tcbuselibrary{skins, breakable}
+
+% --- Settings ---
+\pagestyle{empty}
+\definecolor{SmailePink}{HTML}{EC4899} % Custom Pink
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileGreen}{HTML}{92D050}
+\definecolor{SmaileOrange}{HTML}{ED7D31}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightPink}{HTML}{FDF2F8}
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+
+\newcommand{\pamphletheading}[1]{%
+  \par
+  \needspace{4\baselineskip} 
+  \noindent{\Large\bfseries\color{SmailePink}#1}%
+  \par\vspace{1ex}%
+  \nopagebreak 
+}
+
+\begin{document}
+\color{SmaileGray}
+
+\begin{multicols}{3}
+% --- Panel 1: Intro (Inner Flap) ---
+\pamphletheading{Introduction}
+Can a computer be an artist?
+
+In this 4-week adventure, children (4-7) will explore the colorful world of art. They will paint with digital tools, match music to their moods, and see what happens when they ask an AI robot to draw with them!
+
+\vfill\null
+\pamphletheading{Key Goals}
+\begin{tcolorbox}[colback=SmaileLightPink, colframe=SmailePink, boxrule=0.5pt, arc=2mm]
+\small
+\begin{itemize}[leftmargin=*]
+    \item \textbf{See:} Colors \& shapes in famous art.
+    \item \textbf{Create:} Digital drawings.
+    \item \textbf{Explore:} AI image tools.
+    \item \textbf{Feel:} Connecting music to art.
+\end{itemize}
+\end{tcolorbox}
+
+% --- Panel 2: Back (Resources) ---
+\columnbreak
+\pamphletheading{Resources}
+\begin{itemize}
+    \item \textbf{Draw:} Paint or Canva.
+    \item \textbf{AI:} Artguru / Leonardo AI.
+    \item \textbf{Music:} Chrome Music Lab.
+    \item \textbf{Class:} Projector/Screen.
+\end{itemize}
+
+\vfill\null
+\centering
+\includegraphics[height=1.5cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}
+\par\tiny 
+Co-funded by the European Union.
+
+% --- Panel 3: Front Cover ---
+\columnbreak
+\centering
+\vspace*{2cm}
+\includegraphics[height=3cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}
+\vspace{1cm}
+\par
+{\Huge\bfseries\color{SmailePink} Virtual Art}
+\vspace{0.5cm}
+\par
+{\Large Exploring Art with AI}
+\vspace{2cm}
+\par
+Target Group: 4-7 y.o.
+\par
+\textbf{SmAIle Project}
+
+\end{multicols}
+\newpage
+
+\begin{multicols}{3}
+% --- Panel 4: Outcomes ---
+\pamphletheading{Learning Outcomes}
+\begin{tcolorbox}[colback=SmaileLightBlue, colframe=SmaileBlue, boxrule=0.5pt, arc=2mm]
+\small
+\textbf{Knowledge:}
+\begin{itemize}[leftmargin=*]
+    \item Recognizing art styles.
+    \item Understanding AI can generate images.
+\end{itemize}
+\textbf{Skills:}
+\begin{itemize}[leftmargin=*]
+    \item Using digital brushes.
+    \item Describing art (colors/feelings).
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{1em}
+\pamphletheading{Values}
+\begin{tcolorbox}[colback=SmaileLightPink, colframe=SmailePink, boxrule=0.5pt, arc=2mm]
+\small
+\begin{itemize}[leftmargin=*]
+    \item Curiosity \& Creativity.
+    \item Confidence in sharing.
+\end{itemize}
+\end{tcolorbox}
+
+
+% --- Panel 5: Activities ---
+\pamphletheading{Week 1-2: Create}
+\textbf{Meet the Artists:}
+Looking at Van Gogh and Miró. "How does this picture make you feel?"
+
+\textbf{Drawing with AI:}
+Children draw a picture, then describe it to an AI. They compare the two results: "Which one is more colorful? Which one is more fun?"
+
+% --- Panel 6: Creative ---
+\pamphletheading{Week 3: Music}
+\textbf{Sound \& Color:}
+Listening to happy or mysterious music and matching it to their artwork. "This music sounds yellow!"
+
+\pamphletheading{Week 4: Exhibition}
+\textbf{Gallery Walk:}
+A classroom celebration where children show their digital art slides and receive applause.
+
+\begin{tcolorbox}[colback=white, colframe=SmaileOrange, boxrule=0.5pt]
+\small
+\textbf{Reflection:}
+"Who was more creative: You or the machine?"
+\end{tcolorbox}
+
+\end{multicols}
+\end{document}

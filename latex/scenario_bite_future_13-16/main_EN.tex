@@ -1,0 +1,209 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage{lato}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in, headheight=1.5cm, headsep=0.5cm, footskip=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\tcbuselibrary{skins, breakable}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% --- Colors (Theme: Green for Bite of Future) ---
+\definecolor{SmaileGreen}{HTML}{16A34A}
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileOrange}{HTML}{ED7D31}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightGreen}{HTML}{DCFCE7}
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+
+% --- Settings ---
+\tcbset{colback=white, colframe=SmaileGray, fonttitle=\bfseries}
+\hypersetup{colorlinks=true, linkcolor=SmaileGreen, urlcolor=SmaileGreen}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.2cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}}
+\fancyfoot[R]{\footnotesize Page \thepage}
+
+% --- Title Formats ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{SmaileGreen}}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SmaileGray}}{Activity \thesubsection:}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{SmaileGray}}{}{0em}{}
+
+% --- Boxes ---
+\newtcolorbox{keyinfobox}{colback=SmaileLightGreen, colframe=SmaileGreen, title=Key Information, fonttitle=\bfseries\color{SmaileGreen}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}}
+\newtcolorbox{eurobox}{colback=SmaileLightBlue, colframe=SmaileBlue, title=European Dimension / Erasmus+ Connection, fonttitle=\bfseries\color{SmaileBlue}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}, breakable}
+
+\begin{document}
+
+\title{\textbf{\color{SmaileGreen}A Bite of Future}}
+\author{SMaiLE Project}
+\date{}
+\maketitle
+\thispagestyle{plain}
+
+% --- Key Info ---
+\begin{keyinfobox}
+    \begin{description}[leftmargin=*, labelindent=0pt]
+        \item[\bfseries\color{SmaileGreen} Target Group:] 13 - 16 y.o.
+        \item[\bfseries\color{SmaileGreen} Duration:] 120 min
+    \end{description}
+    \textbf{Key Learning Goals:}
+    \begin{enumerate}
+        \item \textbf{Global Awareness:} Understand food security challenges and the need to feed a growing population sustainably.
+        \item \textbf{Critical Thinking:} Evaluate the benefits, limitations, and ethics of future food technologies.
+        \item \textbf{Digital Literacy:} Use online tools and AI critically while researching and comparing sources.
+        \item \textbf{Collaboration and Creativity:} Work in teams to produce and present an e-book about future food solutions.
+    \end{enumerate}
+\end{keyinfobox}
+
+% --- Outcomes ---
+\section*{Learning Outcomes}
+Students will be able to:
+
+\subsubsection*{KNOWLEDGE \& UNDERSTANDING:}
+\begin{itemize}
+    \item Explain global food challenges and new food technologies.
+    \item Recognize environmental and ethical issues related to food production.
+\end{itemize}
+
+\subsubsection*{SKILLS \& ABILITIES:}
+\begin{itemize}
+    \item Research and assess scientific information online.
+    \item Collaborate and create digital materials.
+    \item Communicate clearly and think critically.
+\end{itemize}
+
+\subsubsection*{ATTITUDES \& VALUES:}
+\begin{itemize}
+    \item Show curiosity and openness toward innovation.
+    \item Value sustainability and responsible consumption.
+    \item Work in teams and respect different opinions.
+\end{itemize}
+
+% --- EU Connection ---
+\begin{eurobox}
+\begin{itemize}
+    \item \textbf{EU Values:} Recognize solidarity, sustainability, and responsible innovation as core European values.
+    \item \textbf{Comparative Perspectives:} Compare food technologies, policies, and cultural attitudes across European countries.
+    \item \textbf{European Examples:} Explore examples such as vertical farms in the Netherlands, insect farms in France, and food waste initiatives in Denmark.
+    \item \textbf{Policy Context:} Connect the topic to the European Green Deal, Farm to Fork Strategy, and the Sustainable Development Goals.
+    \item \textbf{Erasmus+ Connection:} Support collaborative, interdisciplinary, and digitally enabled learning with European partners.
+\end{itemize}
+\end{eurobox}
+
+\newpage
+% --- Resources ---
+\section{Resources and Tools}
+\begin{itemize}
+    \item \textbf{Introduction Resource:} Short video ``Future Food''.
+    \item \textbf{Research Materials:} Topic images for team selection, worksheet, timer, and recommended scientific websites.
+    \item \textbf{Creative Tools:} Computer with internet access, Book Creator or Canva, printed e-book checklist, projector.
+    \item \textbf{Evaluation Tools:} Peer evaluation sheets or digital forms, final workshop evaluation form.
+    \item \textbf{Collaboration Tools:} Padlet, shared document repositories, and optional eTwinning or TwinSpace spaces.
+\end{itemize}
+
+\section{Working Methods}
+\begin{itemize}
+    \item \textbf{Team-Based Learning:} Students work in teams on research, e-book writing, and presentation.
+    \item \textbf{Inquiry-Based Learning:} Students ask questions, explore sources, and compare ideas.
+    \item \textbf{Active Learning:} The lesson uses discussion, brainstorming, worksheet research, design work, presentation, and peer evaluation.
+    \item \textbf{Differentiated Instruction:} The teacher provides different levels of support depending on student needs.
+\end{itemize}
+
+% --- Activity Overview ---
+\section*{Activity Overview}
+\begingroup
+\small
+\begin{tabularx}{\textwidth}{|l|l|L|}
+    \hline
+    \rowcolor{SmaileLightGreen} \textbf{Phase} & \textbf{Time} & \textbf{Activity} \\ \hline
+    Introduction \& Motivation & 10 min & Short video ``Future Food'' followed by guided reflection and discussion. \\ \hline
+    Research \& Learning & 30 min & Students work in teams to research one future food topic using a worksheet and recommended sources. \\ \hline
+    Creative Application & 60 min & Teams design an e-book and present their results; peers assess the presentations. \\ \hline
+    Reflection \& Evaluation & 20 min & Students create a ``Menu of the Future'' and complete final workshop evaluation activities. \\ \hline
+\end{tabularx}
+\endgroup
+
+% --- Activities ---
+\section{Introduction and Motivation}
+\textbf{Goal:} Introduce the theme of future food and activate prior knowledge.
+\begin{itemize}
+    \item \textbf{Opening Context:} Climate change, pollution, and food waste require new ideas about how we produce and consume food.
+    \item \textbf{Video Prompt:} Students watch the short video ``Future Food''.
+    \item \textbf{Guided Questions:}
+    \begin{itemize}
+        \item Would you eat something unusual, such as insects or lab-grown meat, if it could help the planet?
+        \item What seemed the strangest or most interesting idea in the video?
+        \item Do you think we will need to change how we eat in the future?
+    \end{itemize}
+    \item \textbf{Transition:} Students prepare to research and imagine their own ``Menu of Tomorrow''.
+\end{itemize}
+
+\section{Activity 1: Research and Learning}
+\textbf{Goal:} Investigate future food technologies critically.
+\begin{itemize}
+    \item \textbf{Team Formation:} Students draw an image from a box to join a topic team.
+    \item \textbf{Research Topics:}
+    \begin{itemize}
+        \item Vertical Farming
+        \item Lab-Grown Meat
+        \item Insect-Based Nutrition
+        \item Aquaponics and Hydroponics
+    \end{itemize}
+    \item \textbf{Worksheet Questions:}
+    \begin{itemize}
+        \item What is it?
+        \item What problem does it solve?
+        \item What are its advantages and disadvantages?
+        \item Does it already exist locally or globally?
+        \item Would you use it? Why or why not?
+        \item What does ChatGPT or another chatbot say about it?
+        \item Are the AI answers consistent with expert sources?
+    \end{itemize}
+    \item \textbf{Research Expectation:} Students use reliable sources and explain their reasoning clearly.
+\end{itemize}
+
+\section{Activity 2: Creative Application}
+\textbf{Goal:} Turn research into a structured digital product.
+\begin{itemize}
+    \item \textbf{Task:} Teams create an e-book in Book Creator or Canva.
+    \item \textbf{Suggested e-book structure:}
+    \begin{itemize}
+        \item Title
+        \item What it is
+        \item How it works
+        \item Where it already exists
+        \item Positive and negative aspects
+        \item Would you use it?
+        \item AI opinion compared with expert sources
+        \item Message to society
+        \item Literature
+    \end{itemize}
+    \item \textbf{Design Requirement:} Include at least one image, ideally created with an AI image tool.
+    \item \textbf{Presentation:} Each team presents its e-book to the class and receives peer assessment.
+\end{itemize}
+
+\section{Activity 3: Reflection and Evaluation}
+\textbf{Goal:} Consolidate learning and evaluate the workshop.
+\begin{itemize}
+    \item \textbf{Brainstorming:} Students design an ideal ``Future Lunch'' with a warm starter, main course, and dessert.
+    \item \textbf{Discussion:} Students compare menus and comment on each other's ideas using Padlet or classroom discussion.
+    \item \textbf{Assessment:} Final student success combines peer evaluation and teacher assessment.
+    \item \textbf{Final Evaluation:} Students complete a workshop evaluation form using paper or digital tools such as Google Forms or Microsoft Forms.
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,160 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage{lato}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in, headheight=1.5cm, headsep=0.5cm, footskip=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\tcbuselibrary{skins, breakable}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% --- Colors (Theme: Pink for Arts) ---
+\definecolor{SmailePink}{HTML}{EC4899}
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileGreen}{HTML}{92D050}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightPink}{HTML}{FDF2F8}
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+
+% --- Settings ---
+\tcbset{colback=white, colframe=SmaileGray, fonttitle=\bfseries}
+\hypersetup{colorlinks=true, linkcolor=SmailePink, urlcolor=SmailePink}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.2cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}}
+\fancyfoot[R]{\footnotesize Page \thepage}
+
+% --- Title Formats ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{SmailePink}}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SmaileGray}}{Week \thesubsection:}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{SmaileGray}}{}{0em}{}
+
+% --- Boxes ---
+\newtcolorbox{keyinfobox}{colback=SmaileLightPink, colframe=SmailePink, title=Key Information, fonttitle=\bfseries\color{SmailePink}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}}
+\newtcolorbox{eurobox}{colback=SmaileLightBlue, colframe=SmaileBlue, title=European Dimension / Erasmus+ Connection, fonttitle=\bfseries\color{SmaileBlue}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}, breakable}
+
+\begin{document}
+
+\title{\textbf{\color{SmailePink}Virtual Art Exhibition}}
+\author{SMaiLE Project}
+\date{}
+\maketitle
+\thispagestyle{plain}
+
+% --- Key Info ---
+\begin{keyinfobox}
+    \begin{description}[leftmargin=*, labelindent=0pt]
+        \item[\bfseries\color{SmailePink} Target Group:] 13 - 16 y.o.
+        \item[\bfseries\color{SmailePink} Duration:] 4 Weeks (2 sessions/week)
+    \end{description}
+    \textbf{Key Learning Goals:}
+    \begin{enumerate}
+        \item \textbf{Artistic Expression:} Analyze styles and create original digital art.
+        \item \textbf{AI Collaboration:} Generate comparative art and soundscapes using AI tools.
+        \item \textbf{Curatorial Skills:} Design a professional virtual exhibition.
+        \item \textbf{Reflection:} Critically evaluate the role of AI in the creative process.
+    \end{enumerate}
+\end{keyinfobox}
+
+% --- Outcomes ---
+\section*{Learning Outcomes}
+By the end of the project, students will be able to:
+
+\subsubsection*{KNOWLEDGE \& UNDERSTANDING:}
+\begin{itemize}
+    \item Recognize artistic styles and understand how AI mimics them.
+    \item Understand the relationship between visual art and musical atmosphere (tempo, mood).
+\end{itemize}
+
+\subsubsection*{SKILLS \& ABILITIES:}
+\begin{itemize}
+    \item Use advanced digital tools (Canva, AI Generators) for multimedia creation.
+    \item Curate a cohesive digital exhibition presentation.
+    \item Compare human-made art with AI-generated versions critically.
+\end{itemize}
+
+\subsubsection*{ATTITUDES \& VALUES:}
+\begin{itemize}
+    \item Appreciate the ethical complexities of AI in art.
+    \item Value collaboration and constructive peer feedback.
+\end{itemize}
+
+% --- EU Connection ---
+\begin{eurobox}
+\begin{itemize}
+    \item \textbf{Digital Transformation:} Bridging traditional arts with modern tech.
+    \item \textbf{Cultural Heritage:} Reinterpreting European art history.
+    \item \textbf{Inclusion:} Offering diverse modes of expression (visual, auditory).
+\end{itemize}
+\end{eurobox}
+
+\newpage
+% --- Resources ---
+\section{Resources and Tools}
+\begin{itemize}
+    \item \textbf{Visual AI:} Leonardo.ai, Artguru.
+    \item \textbf{Music AI:} Suno, AIVA.
+    \item \textbf{Presentation:} Padlet, Canva.
+    \item \textbf{Hardware:} Laptops, Headphones.
+\end{itemize}
+
+% --- Activity Overview ---
+\section*{Activity Overview}
+\begingroup
+\small
+\begin{tabularx}{\textwidth}{|l|l|L|}
+    \hline
+    \rowcolor{SmaileLightPink} \textbf{Week} & \textbf{Focus} & \textbf{Activities} \\ \hline
+    1 & Research & \textbf{Style Analysis:} Studying art movements. \textbf{Prompting:} Learning to describe art to AI. \\ \hline
+    2 & Creation & \textbf{The Studio:} Creating manual digital art and generating AI comparisons. \\ \hline
+    3 & Sound & \textbf{Sonic Landscapes:} Composing AI music to match the art's mood. \\ \hline
+    4 & Exhibition & \textbf{Curation:} Finalizing presentations. \textbf{Gallery Walk:} Peer review and reflection. \\ \hline
+\end{tabularx}
+\endgroup
+
+% --- Activities ---
+\section{Research \& Creation (Weeks 1-2)}
+\textbf{Goal:} The Human vs. The Machine.
+\begin{itemize}
+    \item \textbf{Human Art:} Students create a digital piece inspired by a specific movement (e.g., Surrealism).
+    \item \textbf{AI Art:} Students write prompts to generate a similar piece.
+    \item \textbf{Comparison:} Analyze differences in emotion, technique, and "soul".
+\end{itemize}
+
+\section{Music Integration (Week 3)}
+\textbf{Goal:} Multi-sensory experience.
+\begin{itemize}
+    \item \textbf{Task:} Generate a background track for the artwork.
+    \item \textbf{Experimentation:} Adjust variables like Tempo (fast/slow), Instruments (electronic/acoustic), and Mood.
+    \item \textbf{Selection:} Justify why the chosen track fits the visual art.
+\end{itemize}
+
+\section{The Exhibition (Week 4)}
+\textbf{Goal:} Professional presentation.
+\begin{itemize}
+    \item \textbf{Digital Presentation:} Create a slide deck/video in Canva including:
+    \begin{itemize}
+        \item Artist/Style context.
+        \item Human vs. AI artwork comparison.
+        \item Integrated background music.
+        \item Reflection on the creative process.
+    \end{itemize}
+    \item \textbf{Gallery Walk:} Share on Padlet. Students leave comments and "likes".
+    \item \textbf{Assessment:} Complete Group Reflection and Self-Assessment Rubrics.
+\end{itemize}
+
+\end{document}

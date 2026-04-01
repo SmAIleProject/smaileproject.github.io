@@ -1,46 +1,238 @@
-# SmAIle static site
+# SmAIle Static Site
 
-A lightweight static website for the SMaiLE project, built with HTML and CSS. The landing page links to three scenario subpages with consistent visuals and accessible defaults.
+Static website for the SmAIle project. The site is built from plain HTML, CSS, and a small amount of JavaScript. There is no build step for the website itself.
 
-## Project structure
+## Repository layout
 
+Top-level pages:
+
+- `index.html`: landing page
+- `scenarios.html`: scenario index page
+- `materials.html`: materials/resources page
+- `moocs.html`: MOOCs page
+- `scenario_*.html`: individual scenario pages
+
+Shared site assets:
+
+- `styles.css`: shared site styles
+- `scripts.js`: small client-side enhancements
+- `attachments/`: downloadable ZIPs, images, and supporting files
+- `pdfs/`: public scenario PDFs used by the site
+- `assets/`: additional static assets
+
+LaTeX source material:
+
+- `latex/scenario_*/`: editable LaTeX source folders for each scenario
+- `latex/import_zips/`: archived ZIP exports/imports for Overleaf
+
+Publishing support:
+
+- `publish.sh`: creates a deployable snapshot from `main` into `public` and pushes it to GitHub Pages
+
+## Working on the site
+
+Edit the HTML files directly. Most content changes will be in:
+
+- `index.html`
+- `scenarios.html`
+- `materials.html`
+- `moocs.html`
+- `scenario_*.html`
+
+For styling changes, edit `styles.css`. For small behavior changes, edit `scripts.js`.
+
+## Local preview
+
+Serve the repository root with a lightweight HTTP server:
+
+```bash
+python3 -m http.server 8000
 ```
-.
-├─ index.html              # Landing page (hero, scenario buttons, EU note)
-├─ scenario_1.html         # Storytelling – Age of Discovery
-├─ scenario_2.html         # The AI Dilemma
-├─ scenario_3.html         # A Bite of the Future
-├─ styles.css              # Shared styles (themes, layout, components)
-├─ scripts.js              # Progressive enhancements (table wrapper)
-├─ logo_smaile.avif        # Project logo
-├─ logo_eu.avif            # EU logo
-└─ README.md               # This file
+
+Then open:
+
+```text
+http://localhost:8000
 ```
 
-## Visual design system
+Notes:
 
-- Accents
-	- Primary accent (orange): `--accent: #fb8c00`
-	- Deeper accent: `--accent-strong: #ef6c00`
-	- Subtle tint: `--accent-muted: rgba(251,140,0,0.08)`
-- Brand highlight
-	- Titles (h1) gradient includes brand cyan: `--brand: #00aeef`
-- Links
-	- Neutral slate link: `--link-color: #374151`; hover: `--link-hover: #111827`
-- Background
-	- Warm, very light creams with faint orange-tinted blobs
+- Run the server from the repository root so links to `attachments/`, `pdfs/`, and other pages resolve correctly.
+- Keep the server running while you edit files and refresh the browser to see changes.
+- If port `8000` is busy, use another port, for example:
 
-## Page conventions
+```bash
+python3 -m http.server 8080
+```
 
-- All pages include `styles.css`; subpages include `scripts.js` (for table enhancement).
-- Subpages also include a fixed-position “Back to Home” pill link.
-- The landing page (`index.html`) uses `body.landing` for center layout and animated hero/buttons.
+## Recommended website workflow
 
-## Editing content
+1. Switch to the working branch:
 
-- Edit the relevant `scenario_*.html` file inside the `.container` element.
-- For new scenarios, copy an existing `scenario_*.html`, update the `<body class>` and hero title/subtitle, and link it from `index.html`.
+```bash
+git checkout main
+```
 
-## License
+2. Edit the relevant HTML, CSS, JS, attachment, or PDF files.
+3. Preview locally with `python3 -m http.server 8000`.
+4. Check the affected pages in the browser.
+5. Commit changes on `main`.
+6. Publish only after the local preview looks correct.
 
-///
+## LaTeX sources
+
+The repository stores the source material used to generate the public PDFs in `pdfs/`.
+
+Current structure:
+
+- `latex/scenario_<name>/main_EN.tex`: full scenario document in English
+- `latex/scenario_<name>/pamphlet_EN.tex`: pamphlet in English
+- `latex/scenario_<name>/main_FR.tex`, `main_ES.tex`, `main_CRO.tex`: translation placeholders or translations
+- `latex/scenario_<name>/pamphlet_FR.tex`, `pamphlet_ES.tex`, `pamphlet_CRO.tex`: translation placeholders or translations
+- `latex/scenario_<name>/smaile_brand_assets/`: logos and shared branding files required by that scenario project
+- `latex/import_zips/*.zip`: original or regenerated Overleaf import/export ZIP archives
+
+Important:
+
+- The `latex/` directory is intentionally excluded from the published site.
+- These files are versioned in git for collaboration, but they must not be publicly downloadable from GitHub Pages.
+
+## Generating a scenario PDF in Overleaf
+
+The LaTeX sources are organized so each `latex/scenario_*` folder can be used as an Overleaf project.
+
+### Full document
+
+Compile:
+
+```text
+main_EN.tex
+```
+
+This produces the full scenario document PDF.
+
+### Pamphlet
+
+Compile:
+
+```text
+pamphlet_EN.tex
+```
+
+This produces the pamphlet PDF.
+
+### Overleaf workflow
+
+1. Identify the scenario folder you want to work on, for example:
+
+```text
+latex/scenario_bite_future_13-16/
+```
+
+2. In Overleaf, create a new project.
+3. Upload the entire scenario folder contents:
+   - the `.tex` files
+   - the `smaile_brand_assets/` folder
+4. Set the main file to either `main_EN.tex` or `pamphlet_EN.tex`, depending on which PDF you want to build.
+5. Compile in Overleaf.
+6. Download the resulting PDF.
+7. Save the public output in `pdfs/` using the repository naming convention:
+
+```text
+pdfs/scenario_<name>_document.pdf
+pdfs/scenario_<name>_pamphlet.pdf
+```
+
+Example:
+
+```text
+pdfs/scenario_bite_future_13-16_document.pdf
+pdfs/scenario_bite_future_13-16_pamphlet.pdf
+```
+
+## Adding a new scenario LaTeX source
+
+Recommended approach:
+
+1. Copy the closest existing scenario folder in `latex/`.
+2. Update `main_EN.tex` and `pamphlet_EN.tex`.
+3. Leave unused translation files empty until translations are available.
+4. Keep branding files in that scenario folder so the project stays uploadable to Overleaf as a self-contained unit.
+5. If needed, create or update the archived ZIP in `latex/import_zips/`.
+
+## Publishing
+
+The repository uses two local branches for deployment:
+
+- `main`: working branch
+- `public`: branch used to create the deployable snapshot
+
+The `publish.sh` script publishes the site by pushing the local `public` branch to the remote `gh-pages` branch.
+
+### What `publish.sh` does
+
+When you run:
+
+```bash
+./publish.sh
+```
+
+the script performs this sequence:
+
+1. Checks out `main`.
+2. Stops if `main` has uncommitted changes.
+3. Asks for confirmation before publishing.
+4. Checks out `public`.
+5. Clears the tracked contents of `public`.
+6. Copies the tracked website files from `main`.
+7. Removes `latex/` from the public snapshot.
+8. Prompts for one more confirmation.
+9. Commits on `public`.
+10. Pushes `public` to `origin/gh-pages`.
+11. Switches back to `main`.
+
+### Why this script exists
+
+The script keeps everyday work on `main` and publishes only a clean snapshot of the website. That means:
+
+- your intermediate commits stay on `main`
+- the deploy branch contains only public website history
+- non-public source material such as `latex/` stays out of GitHub Pages
+
+### Before running the publish script
+
+Make sure that:
+
+- you are in the repository root
+- your local preview looks correct
+- your work on `main` is committed
+- your public PDFs and attachments are already in place
+- you are ready to create a public snapshot
+
+### Running the publish script
+
+If needed, make it executable once:
+
+```bash
+chmod +x publish.sh
+```
+
+Then run:
+
+```bash
+./publish.sh
+```
+
+The script will ask:
+
+- whether you want to proceed with publication
+- whether the copied files look correct
+- for a public commit message
+
+## GitHub Pages target
+
+The site is expected to be available at:
+
+```text
+https://smaileproject.github.io
+```

@@ -1,0 +1,178 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage{lato}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in, headheight=1.5cm, headsep=0.5cm, footskip=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\tcbuselibrary{skins, breakable}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% --- Colors (Theme: Teal for Storytelling) ---
+\definecolor{SmaileTeal}{HTML}{00C2A8}
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileGreen}{HTML}{92D050}
+\definecolor{SmaileOrange}{HTML}{ED7D31}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightTeal}{HTML}{E0F7FA}
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+
+% --- Settings ---
+\tcbset{colback=white, colframe=SmaileGray, fonttitle=\bfseries}
+\hypersetup{colorlinks=true, linkcolor=SmaileTeal, urlcolor=SmaileTeal}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.2cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}}
+\fancyfoot[R]{\footnotesize Page \thepage}
+
+% --- Title Formats ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{SmaileTeal}}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SmaileGray}}{Activity \thesubsection:}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{SmaileGray}}{}{0em}{}
+
+% --- Boxes ---
+\newtcolorbox{keyinfobox}{colback=SmaileLightTeal, colframe=SmaileTeal, title=Key Information, fonttitle=\bfseries\color{SmaileTeal}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}}
+\newtcolorbox{eurobox}{colback=SmaileLightBlue, colframe=SmaileBlue, title=European Dimension / Erasmus+ Connection, fonttitle=\bfseries\color{SmaileBlue}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}, breakable}
+
+\begin{document}
+
+\title{\textbf{\color{SmaileTeal}Storytelling: Age of Discovery}}
+\author{SMaiLE Project}
+\date{}
+\maketitle
+\thispagestyle{plain}
+
+% --- Key Info ---
+\begin{keyinfobox}
+    \begin{description}[leftmargin=*, labelindent=0pt]
+        \item[\bfseries\color{SmaileTeal} Target Group:] 13 - 16 y.o.
+        \item[\bfseries\color{SmaileTeal} Duration:] 9 lessons (45 min each)
+    \end{description}
+    \textbf{Key Learning Goals:}
+    \begin{enumerate}
+        \item \textbf{Historical Analysis:} Analyze the impact of the Age of Discovery on globalization.
+        \item \textbf{Critical Thinking:} Recognize bias, Eurocentrism, and colonialism in narratives.
+        \item \textbf{Digital Storytelling:} Create podcasts and interactive maps using AI tools.
+        \item \textbf{Global Perspectives:} Understand the "Columbian Exchange" and trade routes.
+    \end{enumerate}
+\end{keyinfobox}
+
+% --- Outcomes ---
+\section*{Learning Outcomes}
+Students will be able to:
+
+\subsubsection*{KNOWLEDGE \& UNDERSTANDING:}
+\begin{itemize}
+    \item Demonstrate knowledge of key explorers and their motivations.
+    \item Understand the significance of maps as tools of power.
+    \item Use diverse AI tools to create historical examples.
+\end{itemize}
+
+\subsubsection*{SKILLS \& ABILITIES:}
+\begin{itemize}
+    \item Conduct research using safe sources and AI.
+    \item Create multimedia content (podcasts, maps).
+    \item Work effectively in teams using the Jigsaw method.
+\end{itemize}
+
+\subsubsection*{ATTITUDES \& VALUES:}
+\begin{itemize}
+    \item Develop curiosity about history and culture.
+    \item Show respect for diverse perspectives (e.g., indigenous voices).
+\end{itemize}
+
+% --- EU Connection ---
+\begin{eurobox}
+\begin{itemize}
+    \item \textbf{Cultural Heritage:} Exploring how European exploration shaped global identity.
+    \item \textbf{Social Integration:} Fostering empathy by analyzing history from non-dominant perspectives.
+    \item \textbf{Digital Literacy:} Combining history with modern technology.
+\end{itemize}
+\end{eurobox}
+
+\newpage
+% --- Resources ---
+\section{Resources and Tools}
+\begin{itemize}
+    \item \textbf{Research:} ChatGPT, Google Bard.
+    \item \textbf{Creation:} StoryMapJS, Canva, Audacity (for podcasts).
+    \item \textbf{Materials:} Jigsaw instructions, Map projections (Mercator, Peters).
+\end{itemize}
+
+% --- Activity Overview ---
+\section*{Activity Overview}
+\begingroup
+\small
+\begin{tabularx}{\textwidth}{|l|l|L|}
+    \hline
+    \rowcolor{SmaileLightTeal} \textbf{Phase} & \textbf{Time} & \textbf{Activity} \\ \hline
+    Intro & 15 min & \textbf{Context:} Video "Age of Exploration". Discussion on adventure. \\ \hline
+    Research & 180 min & \textbf{Deep Dive:} Jigsaw research on Explorer Profiles (Activity 1), Map Bias (Activity 2), and Columbian Exchange (Activity 3). \\ \hline
+    Creative & 180 min & \textbf{Storytelling:} Creating an Indigenous Diary (Podcast) and Interactive StoryMap. \\ \hline
+    Reflection & 30 min & \textbf{Evaluation:} Self-reflection and Teacher Rubrics. \\ \hline
+\end{tabularx}
+\endgroup
+
+% --- Activities ---
+\section{Research and Learning}
+\subsection{Critical Explorer Profiles (Jigsaw)}
+\textbf{Goal:} Beyond the "Hero" narrative.
+\begin{itemize}
+    \item \textbf{Task:} Groups research Columbus, Da Gama, Magellan, or Vespucci.
+    \item \textbf{Focus:} Sponsors, motivations, and impact on indigenous populations.
+    \item \textbf{Critical Reflection:} How is the explorer remembered? Who tells the story?
+\end{itemize}
+
+\subsection{Who is at the Center? (Maps)}
+\textbf{Goal:} Analyzing map bias.
+\begin{itemize}
+    \item \textbf{Visuals:} Compare Mercator vs. Peters projections.
+    \item \textbf{Discussion:} "Why is Europe in the center?" "How do maps distort reality?"
+\end{itemize}
+
+\subsection{The Columbian Exchange}
+\textbf{Goal:} Understanding global trade.
+\begin{itemize}
+    \item \textbf{Hook:} Show items (Tomato, Chocolate). "These didn't exist in Europe before 1492!"
+    \item \textbf{Task:} Trace the origin and impact of goods like potatoes or tobacco.
+\end{itemize}
+
+\section{Creative Application}
+\subsection{The Diary of an Indigenous Observer}
+\textbf{Task:} Shift the perspective.
+\begin{itemize}
+    \item Write a script for a podcast from the viewpoint of an indigenous person meeting explorers.
+    \item Use AI tools to generate background imagery or sound effects.
+\end{itemize}
+
+\subsection{Interactive StoryMap}
+\textbf{Task:} Visualizing globalization.
+\begin{itemize}
+    \item Use \textbf{StoryMapJS} to build a narrative map showing the journey of a specific commodity.
+    \item Include images, text, and historical facts.
+\end{itemize}
+
+\section{Reflection and Evaluation}
+\textbf{Assessment Criteria:}
+\begin{itemize}
+    \item \textbf{Historical Accuracy:} 5 pts.
+    \item \textbf{Perspective \& Empathy:} 5 pts.
+    \item \textbf{Creativity:} 5 pts.
+    \item \textbf{Technical Use:} 5 pts.
+\end{itemize}
+
+\end{document}

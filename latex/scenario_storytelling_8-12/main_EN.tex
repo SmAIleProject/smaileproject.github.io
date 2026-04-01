@@ -1,0 +1,196 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage{lato}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in, headheight=1.5cm, headsep=0.5cm, footskip=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\tcbuselibrary{skins, breakable}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% --- Colors (Standard SMaiLE Branding) ---
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileGreen}{HTML}{92D050}
+\definecolor{SmaileOrange}{HTML}{ED7D31}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+\definecolor{SmaileLightGreen}{HTML}{F4FBEE}
+
+% --- Settings ---
+\tcbset{colback=white, colframe=SmaileGray, fonttitle=\bfseries}
+\hypersetup{colorlinks=true, linkcolor=SmaileBlue, urlcolor=SmaileBlue}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.2cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}}
+\fancyfoot[R]{\footnotesize Page \thepage}
+
+% --- Title Formats ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{SmaileOrange}}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SmaileGray}}{Activity \thesubsection:}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{SmaileGray}}{}{0em}{}
+
+% --- Boxes ---
+\newtcolorbox{keyinfobox}{colback=SmaileLightBlue, colframe=SmaileBlue, title=Key Information, fonttitle=\bfseries\color{SmaileBlue}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}}
+\newtcolorbox{eurobox}{colback=SmaileLightGreen, colframe=SmaileGreen, title=European Dimension / Erasmus+ Connection, fonttitle=\bfseries\color{SmaileGreen}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}, breakable}
+
+\begin{document}
+
+\title{\textbf{\color{SmaileBlue}Storytelling: Age of Discovery}}
+\author{SMaiLE Project}
+\date{}
+\maketitle
+\thispagestyle{plain}
+
+% --- Key Info ---
+\begin{keyinfobox}
+    \begin{description}[leftmargin=*, labelindent=0pt]
+        \item[\bfseries\color{SmaileBlue} Target Group:] 8 - 12 y.o.
+        \item[\bfseries\color{SmaileBlue} Duration:] 5 lessons (45 min each)
+    \end{description}
+    \textbf{Key Learning Goals:}
+    \begin{enumerate}
+        \item \textbf{Historical Analysis:} Use storytelling to analyze how discoveries shaped cultural heritage and global interactions.
+        \item \textbf{Geographical Knowledge:} Reinforce understanding of new lands, routes, and maps.
+        \item \textbf{AI Integration:} Use AI tools to generate visuals and refine narratives.
+        \item \textbf{Communication:} Improve written and oral skills through diaries and presentations.
+    \end{enumerate}
+\end{keyinfobox}
+
+% --- Outcomes ---
+\section*{Learning Outcomes}
+Students will be able to:
+
+\subsubsection*{KNOWLEDGE \& UNDERSTANDING:}
+\begin{itemize}
+    \item Demonstrate knowledge of key events, figures, and motivations of the Age of Discovery.
+    \item Understand the significance of maps and trade routes.
+    \item Use diverse AI tools to create historical examples.
+\end{itemize}
+
+\subsubsection*{SKILLS \& ABILITIES:}
+\begin{itemize}
+    \item Develop research skills using safe sources (e.g., Kiddle, KidsChatGPT).
+    \item Build communication skills by writing diaries and letters.
+    \item Reinforce content creation skills by using AI to generate visuals.
+\end{itemize}
+
+\subsubsection*{ATTITUDES \& VALUES:}
+\begin{itemize}
+    \item Develop curiosity about history and cultures.
+    \item Show respect for diversity and different perspectives.
+    \item Build commitment to collaboration and teamwork.
+\end{itemize}
+
+% --- EU Connection ---
+\begin{eurobox}
+\begin{itemize}
+    \item \textbf{Cultural Heritage:} Explores the legacy of European explorers and shared identity.
+    \item \textbf{Social Integration:} Fosters empathy by examining diverse perspectives of history.
+    \item \textbf{Economic Awareness:} Links early trade to modern global relations and sustainability.
+    \item \textbf{Digital Literacy:} Aligns with Erasmus+ digital transformation priorities by using AI tools.
+\end{itemize}
+\end{eurobox}
+
+\newpage
+% --- Resources ---
+\section{Resources and Tools}
+\begin{itemize}
+    \item \textbf{Research:} KidsChatGPT, Kiddle.co, Google Gemini (supervised).
+    \item \textbf{Mapping:} Google My Maps, Canva (for infographics).
+    \item \textbf{Storytelling:} My Diary App, Book Creator, StoryJumper.
+    \item \textbf{Visuals:} Craiyon (AI image generation), AutoDraw.
+    \item \textbf{Assessment:} Google Forms, Mentimeter.
+\end{itemize}
+
+% --- Activity Overview ---
+\section*{Activity Overview}
+\begingroup
+\small
+\begin{tabularx}{\textwidth}{|l|l|L|}
+    \hline
+    \rowcolor{SmaileLightBlue} \textbf{Phase} & \textbf{Time} & \textbf{Activity} \\ \hline
+    Intro & 15 min & \textbf{Setting the Stage:} Video on Age of Exploration. Discussion: "If you were an explorer..." \\ \hline
+    Research & 90 min & \textbf{Project-Based Learning:} Explorer Profiles, Creating Routes (Maps), Food Origins ("Why is cinnamon in my roll?"). \\ \hline
+    Creative & 90 min & \textbf{Application:} Writing "The Diary of an Explorer", generating AI visuals, Interactive Presentations. \\ \hline
+    Reflection & 30 min & \textbf{Evaluation:} Self-reflection (Att 3.1), Peer feedback, Teacher rubric (Att 4.1). \\ \hline
+\end{tabularx}
+\endgroup
+
+% --- Activities ---
+\section{Introduction and Motivation}
+\textbf{Goal:} Engage students with the historical context.
+\begin{itemize}
+    \item \textbf{Watch:} Video "The Age of Exploration".
+    \item \textbf{Discuss:} "If you could discover a new land today, where would you go and why?"
+\end{itemize}
+
+\section{Research and Learning}
+\subsection{Explorer Profiles}
+Students work in groups to create profiles for Columbus, Vasco da Gama, Magellan, or Vespucci.
+\begin{itemize}
+    \item Use AI tools to find: Background, Major Voyages, Discoveries.
+    \item \textbf{Method:} Fishbowl Discussion to share findings.
+\end{itemize}
+
+\subsection{Creating Routes of Discoveries}
+Students mark the route of their explorer on a map.
+\begin{itemize}
+    \item \textbf{Tool:} Google My Maps (collaborative online map).
+    \item Analyze the significance of the places discovered.
+\end{itemize}
+
+\subsection{Why is Cinnamon in my Roll?}
+\textbf{The Hook:} "If you lived in the Middle Ages, you would never have tasted chocolate."
+\begin{itemize}
+    \item Research foods brought to Europe from other continents.
+    \item Use Padlet to sort foods by continent of origin.
+    \item Discuss how these findings changed European cuisine.
+\end{itemize}
+
+\section{Creative Application}
+\subsection{The Diary of an Explorer}
+Students write diary entries or letters as if they were explorers.
+\begin{itemize}
+    \item Detail experiences, emotions, and fears.
+    \item \textbf{AI Task:} Use AI image generators to create illustrations that match their specific diary descriptions.
+\end{itemize}
+
+\subsection{Interactive Visual Storytelling}
+Students prepare a presentation of their diary entries.
+\begin{itemize}
+    \item \textbf{Hook:} "Have you ever sailed on a Carrack?"
+    \item Use the AI-generated visuals to bring the story to life.
+\end{itemize}
+
+\newpage
+% --- Evaluation ---
+\section{Reflection and Evaluation}
+\textbf{Group Reflection (25 min):}
+\begin{itemize}
+    \item What went well and why?
+    \item What challenges did we face?
+    \item \textbf{Assessment:} Students fill out the Self-Reflection Chart (Att 3.1).
+\end{itemize}
+
+\section*{Teacher's Notes}
+\begin{itemize}
+    \item Ensure safe search tools (Kiddle) are used.
+    \item Monitor AI usage to ensure prompts are age-appropriate.
+    \item Encourage multilingualism if students speak different languages.
+\end{itemize}
+
+\end{document}

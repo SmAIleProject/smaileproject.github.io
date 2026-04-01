@@ -1,0 +1,166 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage{lato}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in, headheight=1.5cm, headsep=0.5cm, footskip=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\tcbuselibrary{skins, breakable}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% --- Colors (Theme: Green for Environment) ---
+\definecolor{SmaileGreen}{HTML}{16A34A}
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileOrange}{HTML}{ED7D31}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightGreen}{HTML}{DCFCE7}
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+
+% --- Settings ---
+\tcbset{colback=white, colframe=SmaileGray, fonttitle=\bfseries}
+\hypersetup{colorlinks=true, linkcolor=SmaileGreen, urlcolor=SmaileGreen}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.2cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}}
+\fancyfoot[R]{\footnotesize Page \thepage}
+
+% --- Title Formats ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{SmaileGreen}}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SmaileGray}}{Activity \thesubsection:}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{SmaileGray}}{}{0em}{}
+
+% --- Boxes ---
+\newtcolorbox{keyinfobox}{colback=SmaileLightGreen, colframe=SmaileGreen, title=Key Information, fonttitle=\bfseries\color{SmaileGreen}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}}
+\newtcolorbox{eurobox}{colback=SmaileLightBlue, colframe=SmaileBlue, title=European Dimension / Erasmus+ Connection, fonttitle=\bfseries\color{SmaileBlue}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}, breakable}
+
+\begin{document}
+
+\title{\textbf{\color{SmaileGreen}AI and the Carbon Footprint}}
+\author{SMaiLE Project}
+\date{}
+\maketitle
+\thispagestyle{plain}
+
+% --- Key Info ---
+\begin{keyinfobox}
+    \begin{description}[leftmargin=*, labelindent=0pt]
+        \item[\bfseries\color{SmaileGreen} Target Group:] 13 - 16 y.o.
+        \item[\bfseries\color{SmaileGreen} Duration:] 3 Weeks (55 min/session)
+    \end{description}
+    \textbf{Key Learning Goals:}
+    \begin{enumerate}
+        \item \textbf{Scientific Understanding:} Explain carbon footprints and AI energy consumption.
+        \item \textbf{Digital Awareness:} Evaluate environmental impact of digital habits.
+        \item \textbf{Critical Thinking:} Debate ethical AI use regarding the environment.
+        \item \textbf{Creative Solutions:} Propose AI solutions for reducing ecological footprints.
+    \end{enumerate}
+\end{keyinfobox}
+
+% --- Outcomes ---
+\section*{Learning Outcomes}
+By the end of the project, students will be able to:
+
+\subsubsection*{KNOWLEDGE \& UNDERSTANDING:}
+\begin{itemize}
+    \item Explain "CO$_2$ equivalents" and data center energy consumption.
+    \item Understand the energy and water costs involved in AI operations.
+\end{itemize}
+
+\subsubsection*{SKILLS \& ABILITIES:}
+\begin{itemize}
+    \item Compare energy costs of digital actions (email vs. AI training).
+    \item Work in teams to brainstorm sustainable solutions.
+    \item Present sustainable AI-based ideas clearly.
+\end{itemize}
+
+\subsubsection*{ATTITUDES \& VALUES:}
+\begin{itemize}
+    \item Demonstrate responsibility for digital habits.
+    \item Appreciate the role of innovation in sustainability.
+\end{itemize}
+
+% --- EU Connection ---
+\begin{eurobox}
+\begin{itemize}
+    \item \textbf{Digital \& Ecological Citizenship:} Building responsible digital citizens.
+    \item \textbf{Transnational Challenges:} Comparing energy data across borders.
+    \item \textbf{Innovation:} Encouraging creative technical solutions for green goals.
+\end{itemize}
+\end{eurobox}
+
+\newpage
+% --- Resources ---
+\section{Resources and Tools}
+\begin{itemize}
+    \item \textbf{Research:} ChatGPT, Carbon Calculators.
+    \item \textbf{Collaboration:} Padlet, Mind Mapping software.
+    \item \textbf{Materials:} Mission Sheets, Tablets/Laptops.
+    \item \textbf{Video:} "The hidden cost of your digital life".
+\end{itemize}
+
+% --- Activity Overview ---
+\section*{Activity Overview}
+\begingroup
+\small
+\begin{tabularx}{\textwidth}{|l|l|L|}
+    \hline
+    \rowcolor{SmaileLightGreen} \textbf{Phase} & \textbf{Time} & \textbf{Activity} \\ \hline
+    Intro & 20 min & \textbf{The Cloud is on Earth:} Video and discussion on data centers and physical infrastructure. \\ \hline
+    Research & 35 min & \textbf{Guess the Impact:} Researching and matching digital activities to their CO$_2$ emissions. \\ \hline
+    Creative & 55 min & \textbf{AI Solutions Mission:} Designing AI-based solutions for green living (e.g., smart energy). \\ \hline
+    Reflection & 20 min & \textbf{Evaluation:} Presentations, Padlet reflection, and final assessment. \\ \hline
+\end{tabularx}
+\endgroup
+
+% --- Activities ---
+\section{Introduction: The Invisible Cost}
+\textbf{Goal:} Visualize the physical internet.
+\begin{itemize}
+    \item \textbf{Activity:} Watch a video about data centers.
+    \item \textbf{Discuss:} "Where does the 'Cloud' live?" "Why do servers need cooling?"
+\end{itemize}
+
+\section{Research: Guess the Impact}
+\textbf{Goal:} Understand carbon footprints.
+\begin{itemize}
+    \item \textbf{Task:} Students research the emissions of various activities.
+    \item \textbf{Comparison:} Watching HD video vs. Sending an email vs. Training a large AI model.
+    \item \textbf{Tool:} Use ChatGPT to find estimates.
+\end{itemize}
+
+\section{Creative: AI Solutions Mission}
+\textbf{Goal:} Innovation for sustainability.
+\begin{itemize}
+    \item \textbf{Group Work:} Teams invent 2 AI-based solutions to reduce impact.
+    \item \textbf{Prompts:}
+    \begin{itemize}
+        \item Smart AI to optimize home energy.
+        \item AI to reduce food waste.
+        \item AI ride-sharing algorithms.
+    \end{itemize}
+    \item \textbf{Output:} Create a collaborative Mind Map.
+\end{itemize}
+
+\section{Reflection and Evaluation}
+\textbf{Goal:} Personal responsibility.
+\begin{itemize}
+    \item \textbf{Presentations:} Teams share their solutions.
+    \item \textbf{Padlet Reflection:} "What surprised me?" "What action will I take?"
+    \item \textbf{Assessment:} Complete the final student workshop evaluation.
+\end{itemize}
+
+\end{document}

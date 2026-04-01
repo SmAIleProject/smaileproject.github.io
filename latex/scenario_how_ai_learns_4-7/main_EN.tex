@@ -1,0 +1,181 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage{lato}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in, headheight=1.5cm, headsep=0.5cm, footskip=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\tcbuselibrary{skins, breakable}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% --- Colors (Standard SMaiLE Blue Theme) ---
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileGreen}{HTML}{92D050}
+\definecolor{SmaileOrange}{HTML}{ED7D31}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+\definecolor{SmaileLightGreen}{HTML}{F4FBEE}
+
+% --- Settings ---
+\tcbset{colback=white, colframe=SmaileGray, fonttitle=\bfseries}
+\hypersetup{colorlinks=true, linkcolor=SmaileBlue, urlcolor=SmaileBlue}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.2cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}}
+\fancyfoot[R]{\footnotesize Page \thepage}
+
+% --- Title Formats ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{SmaileBlue}}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SmaileGray}}{Activity \thesubsection:}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{SmaileGray}}{}{0em}{}
+
+% --- Boxes ---
+\newtcolorbox{keyinfobox}{colback=SmaileLightBlue, colframe=SmaileBlue, title=Key Information, fonttitle=\bfseries\color{SmaileBlue}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}}
+\newtcolorbox{eurobox}{colback=SmaileLightGreen, colframe=SmaileGreen, title=European Dimension / Erasmus+ Connection, fonttitle=\bfseries\color{SmaileGreen}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}, breakable}
+
+\begin{document}
+
+\title{\textbf{\color{SmaileBlue}How AI Learns and Solves Problems}}
+\author{SMaiLE Project}
+\date{}
+\maketitle
+\thispagestyle{plain}
+
+% --- Key Info ---
+\begin{keyinfobox}
+    \begin{description}[leftmargin=*, labelindent=0pt]
+        \item[\bfseries\color{SmaileBlue} Target Group:] 4 - 7 y.o.
+        \item[\bfseries\color{SmaileBlue} Duration:] 2.5 -- 3 hours (Modular)
+    \end{description}
+    \textbf{Key Learning Goals:}
+    \begin{enumerate}
+        \item \textbf{Understanding AI:} See AI as a helpful tool, not magic.
+        \item \textbf{Human Role:} Understand that robots need people to learn.
+        \item \textbf{Curiosity:} Explore real-life examples (vacuums, smart speakers).
+        \item \textbf{Creativity:} Imagine and design a helpful robot.
+    \end{enumerate}
+\end{keyinfobox}
+
+% --- Outcomes ---
+\section*{Learning Outcomes}
+Students will be able to:
+
+\subsubsection*{KNOWLEDGE \& UNDERSTANDING:}
+\begin{itemize}
+    \item Understand what a robot or AI assistant is.
+    \item Learn that AI can help with tasks but needs human guidance.
+    \item Explore real-life examples of AI helpers.
+\end{itemize}
+
+\subsubsection*{SKILLS \& ABILITIES:}
+\begin{itemize}
+    \item Storytelling and discussion about technology.
+    \item Role-playing to understand instructions.
+    \item Creative drawing to express ideas.
+\end{itemize}
+
+\subsubsection*{ATTITUDES \& VALUES:}
+\begin{itemize}
+    \item Build curiosity about technology.
+    \item Reflect on the difference between humans and machines.
+    \item Develop responsibility in using tools.
+\end{itemize}
+
+% --- EU Connection ---
+\begin{eurobox}
+\begin{itemize}
+    \item \textbf{Early Digital Literacy:} Provides an accessible entry point to AI education.
+    \item \textbf{Critical Thinking:} Encourages children to question technology's role.
+    \item \textbf{Inclusion:} Uses familiar examples to include all children in the conversation.
+    \item \textbf{Future Readiness:} Prepares young learners for a digital world.
+\end{itemize}
+\end{eurobox}
+
+\newpage
+% --- Resources ---
+\section{Resources and Tools}
+\begin{itemize}
+    \item \textbf{Props:} Puppet or toy robot.
+    \item \textbf{Materials:} Printable cards ("Robot guesses right/wrong"), Drawing paper, Pencils.
+    \item \textbf{Media:} Short video of robots in everyday life (e.g., SciShow Kids).
+    \item \textbf{Assessment:} Checklist (included).
+\end{itemize}
+
+% --- Activity Overview ---
+\section*{Activity Overview}
+\begingroup
+\small
+\begin{tabularx}{\textwidth}{|l|l|L|}
+    \hline
+    \rowcolor{SmaileLightBlue} \textbf{Phase} & \textbf{Time} & \textbf{Activity} \\ \hline
+    Intro & 20 min & \textbf{Story:} "The Robot Who Got It Wrong". Discussing robot mistakes. \\ \hline
+    Research & 30 min & \textbf{Real AI Helpers:} Video and Voting Game ("Can a robot do this?"). \\ \hline
+    Creative & 40 min & \textbf{Game \& Drawing:} "Robot Helper or Human Job?" and "Design Your Robot". \\ \hline
+    Reflection & 20 min & \textbf{Circle Time:} Sharing drawings and Memory Box activity. \\ \hline
+\end{tabularx}
+\endgroup
+
+% --- Activities ---
+\section{Introduction and Motivation}
+\subsection{Story: The Robot Who Got It Wrong}
+\textbf{Goal:} Spark curiosity and show that robots need help.
+\begin{itemize}
+    \item \textbf{Activity:} Teacher reads a story about a robot who gets confused (e.g., putting shoes in the fridge).
+    \item \textbf{Discussion:} "Why did the robot get it wrong?" "How do people know better?"
+    \item \textbf{Key Concept:} Robots are helpful but don't think like people.
+\end{itemize}
+
+\section{Research and Learning}
+\subsection{Exploring Real AI Helpers}
+\textbf{Goal:} Connect concepts to real life.
+\begin{itemize}
+    \item \textbf{Video:} Watch a short clip about robots (vacuums, delivery bots).
+    \item \textbf{Discussion:} "Can a robot vacuum find your lost socks?" (No). "Can a smart speaker give you a hug?" (No).
+    \item \textbf{Voting Game:} Teacher shows cards (e.g., Hospital Robot). Children vote if it needs a person to help.
+\end{itemize}
+
+\section{Creative Application}
+\subsection{Robot Helper or Human Job?}
+\textbf{Sorting Game:}
+\begin{itemize}
+    \item Teacher calls out tasks: "Tidy room", "Give a hug", "Paint a picture".
+    \item Children move to zones: \textbf{Robot}, \textbf{Person}, or \textbf{Both}.
+\end{itemize}
+
+\subsection{Drawing Task: Design Your Robot}
+\textbf{Assignment:} Invent your own robot helper.
+\begin{itemize}
+    \item What does it do well? (e.g., carry heavy boxes).
+    \item What does it need help with? (e.g., knowing where to go).
+\end{itemize}
+
+\section{Reflection and Evaluation}
+\subsection{Circle Time \& Memory Box}
+\begin{itemize}
+    \item Children share their robot drawings.
+    \item \textbf{Memory Box:} Add drawings/notes of "How AI helped today" (e.g., Mom used a map app).
+\end{itemize}
+
+\subsection*{Assessment Checklist}
+\begin{itemize}
+    \item Recognised robot roles vs. human roles.
+    \item Described how their robot helps.
+    \item Engaged with drawing/memory box.
+    \item Shared ideas confidently.
+\end{itemize}
+
+\end{document}

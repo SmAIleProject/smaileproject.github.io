@@ -1,0 +1,139 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, landscape, margin=1cm]{geometry}
+\usepackage{multicol}
+\usepackage{lato}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{needspace}
+\tcbuselibrary{skins, breakable}
+
+% --- Settings ---
+\pagestyle{empty}
+\definecolor{SmaileOrange}{HTML}{ED7D31} % Theme Color
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileGreen}{HTML}{92D050}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightOrange}{HTML}{FEF3E9}
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+
+\newcommand{\pamphletheading}[1]{%
+  \par
+  \needspace{4\baselineskip} 
+  \noindent{\Large\bfseries\color{SmaileOrange}#1}%
+  \par\vspace{1ex}%
+  \nopagebreak 
+}
+
+\begin{document}
+\color{SmaileGray}
+
+\begin{multicols}{3}
+% --- Panel 1: Intro (Inner Flap) ---
+\pamphletheading{Introduction}
+Teaching Machines to See.
+
+In this workshop, students (13-16) explore the intersection of AI and Science. By building their own datasets and training models to classify scientific objects (like rocks or plants), they gain a practical understanding of Machine Learning and the ethical challenges of automation.
+
+\vfill\null
+\pamphletheading{Key Goals}
+\begin{tcolorbox}[colback=SmaileLightOrange, colframe=SmaileOrange, boxrule=0.5pt, arc=2mm]
+\small
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Train:} AI models with custom data.
+    \item \textbf{Analyze:} Scientific classification.
+    \item \textbf{Debate:} AI vs. Human judgment.
+    \item \textbf{Collaborate:} In research teams.
+\end{itemize}
+\end{tcolorbox}
+
+% --- Panel 2: Back (Resources) ---
+\columnbreak
+\pamphletheading{Resources}
+\begin{itemize}
+    \item \textbf{Tool:} Teachable Machine.
+    \item \textbf{Platform:} eTwinning.
+    \item \textbf{Data:} Student-collected images.
+    \item \textbf{Tech:} Laptops/Tablets.
+\end{itemize}
+
+\vfill\null
+\centering
+\includegraphics[height=1.5cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}
+\par\tiny 
+Co-funded by the European Union.
+
+% --- Panel 3: Front Cover ---
+\columnbreak
+\centering
+\vspace*{2cm}
+\includegraphics[height=3cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}
+\vspace{1cm}
+\par
+{\Huge\bfseries\color{SmaileOrange} Training AI}
+\vspace{0.5cm}
+\par
+{\Large AI \& Machine Learning}
+\vspace{2cm}
+\par
+Target Group: 13-16 y.o.
+\par
+\textbf{SmAIle Project}
+
+\end{multicols}
+\newpage
+
+\begin{multicols}{3}
+% --- Panel 4: Outcomes ---
+\pamphletheading{Learning Outcomes}
+\begin{tcolorbox}[colback=SmaileLightBlue, colframe=SmaileBlue, boxrule=0.5pt, arc=2mm]
+\small
+\textbf{Knowledge:}
+\begin{itemize}[leftmargin=*]
+    \item Machine Learning processes.
+    \item Sources of bias in data.
+\end{itemize}
+\textbf{Skills:}
+\begin{itemize}[leftmargin=*]
+    \item Dataset creation.
+    \item Scientific inquiry.
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{1em}
+\pamphletheading{Values}
+\begin{tcolorbox}[colback=SmaileLightOrange, colframe=SmaileOrange, boxrule=0.5pt, arc=2mm]
+\small
+\begin{itemize}[leftmargin=*]
+    \item Digital responsibility.
+    \item Critical thinking.
+    \item Scientific integrity.
+\end{itemize}
+\end{tcolorbox}
+
+
+% --- Panel 5: Activities ---
+\pamphletheading{1. Data Collection}
+\textbf{Fieldwork:}
+Students collect images of specific scientific categories (e.g., igneous vs. sedimentary rocks), ensuring the data is diverse and high-quality.
+
+\pamphletheading{2. Training \& Testing}
+\textbf{Teachable Machine:}
+Students feed their data into the tool to train a model. They then test it with new, unseen samples to verify its accuracy.
+
+% --- Panel 6: Reflection ---
+\pamphletheading{3. Ethics}
+\textbf{Debate:}
+"Can AI replace lab scientists?"
+Students discuss the reliability of AI in critical tasks and the importance of human oversight.
+
+\begin{tcolorbox}[colback=white, colframe=SmaileGray, boxrule=0.5pt]
+\small
+\textbf{Reflection:}
+Padlet discussion on trust in technology.
+\end{tcolorbox}
+
+\end{multicols}
+\end{document}

@@ -1,0 +1,174 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage{lato}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in, headheight=1.5cm, headsep=0.5cm, footskip=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\tcbuselibrary{skins, breakable}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% --- Colors (Standard SMaiLE Teal Theme for Storytelling) ---
+\definecolor{SmaileTeal}{HTML}{00C2A8} % Custom Teal
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileGreen}{HTML}{92D050}
+\definecolor{SmaileOrange}{HTML}{ED7D31}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightTeal}{HTML}{E0F7FA} 
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+
+% --- Settings ---
+\tcbset{colback=white, colframe=SmaileGray, fonttitle=\bfseries}
+\hypersetup{colorlinks=true, linkcolor=SmaileTeal, urlcolor=SmaileTeal}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.2cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}}
+\fancyfoot[R]{\footnotesize Page \thepage}
+
+% --- Title Formats ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{SmaileTeal}}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SmaileGray}}{Lesson \thesubsection:}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{SmaileGray}}{}{0em}{}
+
+% --- Boxes ---
+\newtcolorbox{keyinfobox}{colback=SmaileLightTeal, colframe=SmaileTeal, title=Key Information, fonttitle=\bfseries\color{SmaileTeal}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}}
+\newtcolorbox{eurobox}{colback=SmaileLightBlue, colframe=SmaileBlue, title=European Dimension / Erasmus+ Connection, fonttitle=\bfseries\color{SmaileBlue}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}, breakable}
+
+\begin{document}
+
+\title{\textbf{\color{SmaileTeal}Storytelling: Age of Discovery}}
+\author{SMaiLE Project}
+\date{}
+\maketitle
+\thispagestyle{plain}
+
+% --- Key Info ---
+\begin{keyinfobox}
+    \begin{description}[leftmargin=*, labelindent=0pt]
+        \item[\bfseries\color{SmaileTeal} Target Group:] 4 - 7 y.o.
+        \item[\bfseries\color{SmaileTeal} Duration:] 3 lessons (30--40 min)
+    \end{description}
+    \textbf{Key Learning Goals:}
+    \begin{enumerate}
+        \item \textbf{Imagination:} Explore storytelling by imagining voyages.
+        \item \textbf{AI Collaboration:} Partner with "Brainy" (AI) to build adventures.
+        \item \textbf{Structure:} Learn Beginning, Middle, and End.
+        \item \textbf{Teamwork:} Collaborate to draw and tell a story.
+    \end{enumerate}
+\end{keyinfobox}
+
+% --- Outcomes ---
+\section*{Learning Outcomes}
+By the end of the project, students will be able to:
+
+\subsubsection*{KNOWLEDGE \& UNDERSTANDING:}
+\begin{itemize}
+    \item Understand that AI tools can help us tell stories.
+    \item Explore a simple story structure.
+    \item Recognise that people explored the world long ago.
+\end{itemize}
+
+\subsubsection*{SKILLS \& ABILITIES:}
+\begin{itemize}
+    \item Improve listening and speaking skills.
+    \item Express ideas through drawing and role-play.
+    \item Build a story with characters and settings.
+\end{itemize}
+
+\subsubsection*{ATTITUDES \& VALUES:}
+\begin{itemize}
+    \item Develop curiosity and imagination.
+    \item Show respect for others' ideas.
+    \item Enjoy working together as a team.
+\end{itemize}
+
+% --- EU Connection ---
+\begin{eurobox}
+\begin{itemize}
+    \item \textbf{Cultural Heritage:} Stories of discovery link to European history.
+    \item \textbf{Digital Inclusion:} Demonstrates how AI supports creativity.
+    \item \textbf{Collaboration:} Fosters teamwork and shared expression.
+\end{itemize}
+\end{eurobox}
+
+\newpage
+% --- Resources ---
+\section{Resources and Tools}
+\begin{itemize}
+    \item \textbf{Cards:} "Brainy's Character \& Setting Cards" (provided).
+    \item \textbf{Props:} Toy boat, map, or costume pieces.
+    \item \textbf{Art:} Paper, crayons, markers.
+    \item \textbf{AI Tool:} Teacher uses ChatGPT or similar as "Brainy".
+    \item \textbf{Evaluation:} Peer Feedback Form.
+\end{itemize}
+
+% --- Activity Overview ---
+\section*{Activity Overview}
+\begingroup
+\small
+\begin{tabularx}{\textwidth}{|l|l|L|}
+    \hline
+    \rowcolor{SmaileLightTeal} \textbf{Lesson} & \textbf{Activity} & \textbf{Description} \\ \hline
+    1 & The Big Idea & \textbf{Concept:} What is a story? Meeting Brainy (AI). Brainstorming ideas. \\ \hline
+    2 & Our Adventure & \textbf{Create:} Choosing cards. Asking Brainy for a prompt. Drawing the scene. \\ \hline
+    3 & Sharing Time & \textbf{Present:} Telling the story to the class. Peer Feedback. \\ \hline
+\end{tabularx}
+\endgroup
+
+% --- Activities ---
+\section{Lesson 1: The Big Idea}
+\textbf{Goal:} Introduce storytelling and AI.
+\begin{itemize}
+    \item \textbf{Discussion:} "What makes a good story?" (Heroes, magic, places).
+    \item \textbf{Structure:} Explain Start, Middle, End.
+    \item \textbf{Meet Brainy:} Introduce the AI as a helper who has lots of ideas but needs children's imagination to make them real.
+\end{itemize}
+
+\section{Lesson 2: Our Adventure}
+\textbf{Goal:} Collaborative creation.
+\begin{itemize}
+    \item \textbf{Step 1:} Groups pick 1 Character Card (e.g., Pirate) and 1 Setting Card (e.g., Space).
+    \item \textbf{Step 2:} Teacher asks Brainy: "Brainy, give us a story starter for a Pirate in Space!"
+    \item \textbf{Step 3:} Brainy gives a prompt (e.g., "The Pirate lost his treasure map on the moon!").
+    \item \textbf{Step 4:} Children decide what happens next and draw it.
+\end{itemize}
+
+\section{Lesson 3: Sharing Time}
+\textbf{Goal:} Presentation and feedback.
+\begin{itemize}
+    \item \textbf{Tell the Tale:} Groups show their drawings and tell the story.
+    \item \textbf{Role Play:} Use funny voices or actions.
+    \item \textbf{Feedback:} Use the "Giving Feedback to a Friend" form (smiley faces).
+\end{itemize}
+
+\section{Reflection and Evaluation}
+\subsection*{My Story Checklist}
+\begin{itemize}
+    \item Did we have a beginning, middle, and end?
+    \item Did we use Brainy's idea?
+    \item Did we work together?
+\end{itemize}
+
+\subsection*{Teacher Evaluation}
+\begin{itemize}
+    \item \textbf{Structure:} Clear narrative parts.
+    \item \textbf{Creativity:} Imaginative ideas.
+    \item \textbf{Collaboration:} Teamwork quality.
+    \item \textbf{AI Use:} Engagement with the tool.
+\end{itemize}
+
+\end{document}

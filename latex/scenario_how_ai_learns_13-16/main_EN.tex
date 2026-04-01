@@ -1,0 +1,171 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage{lato}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in, headheight=1.5cm, headsep=0.5cm, footskip=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\tcbuselibrary{skins, breakable}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% --- Colors (Theme: Blue for How AI Learns) ---
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileGreen}{HTML}{92D050}
+\definecolor{SmaileOrange}{HTML}{ED7D31}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE} 
+\definecolor{SmaileLightGreen}{HTML}{F4FBEE}
+
+% --- Settings ---
+\tcbset{colback=white, colframe=SmaileGray, fonttitle=\bfseries}
+\hypersetup{colorlinks=true, linkcolor=SmaileBlue, urlcolor=SmaileBlue}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.2cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}}
+\fancyfoot[R]{\footnotesize Page \thepage}
+
+% --- Title Formats ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{SmaileBlue}}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SmaileGray}}{Activity \thesubsection:}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{SmaileGray}}{}{0em}{}
+
+% --- Boxes ---
+\newtcolorbox{keyinfobox}{colback=SmaileLightBlue, colframe=SmaileBlue, title=Key Information, fonttitle=\bfseries\color{SmaileBlue}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}}
+\newtcolorbox{eurobox}{colback=SmaileLightGreen, colframe=SmaileGreen, title=European Dimension / Erasmus+ Connection, fonttitle=\bfseries\color{SmaileGreen}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}, breakable}
+
+\begin{document}
+
+\title{\textbf{\color{SmaileBlue}How AI Learns and Solves Problems}}
+\author{SMaiLE Project}
+\date{}
+\maketitle
+\thispagestyle{plain}
+
+% --- Key Info ---
+\begin{keyinfobox}
+    \begin{description}[leftmargin=*, labelindent=0pt]
+        \item[\bfseries\color{SmaileBlue} Target Group:] 13 - 16 y.o.
+        \item[\bfseries\color{SmaileBlue} Duration:] 135 min
+    \end{description}
+    \textbf{Key Learning Goals:}
+    \begin{enumerate}
+        \item \textbf{Fundamentals:} Introduce concepts of AI, Machine Learning, and Neural Networks.
+        \item \textbf{Learning Methods:} Explore Supervised Learning and Reinforcement Learning through simulation.
+        \item \textbf{Application:} Match AI technologies to real-world problems (ecology, sustainability).
+        \item \textbf{Innovation:} Design a conceptual AI solution to a specific challenge.
+    \end{enumerate}
+\end{keyinfobox}
+
+% --- Outcomes ---
+\section*{Learning Outcomes}
+By the end of the project, students will be able to:
+
+\subsubsection*{KNOWLEDGE \& UNDERSTANDING:}
+\begin{itemize}
+    \item Define Artificial Intelligence and articulate how it learns from data.
+    \item Identify key paradigms: Supervised Learning, LLMs, Computer Vision.
+    \item Recognize various AI types and match them to appropriate problems.
+\end{itemize}
+
+\subsubsection*{SKILLS \& ABILITIES:}
+\begin{itemize}
+    \item Develop critical thinking to differentiate human vs. AI content.
+    \item Use tools like Teachable Machine to train basic models.
+    \item Design conceptual AI solutions for sustainability issues.
+\end{itemize}
+
+\subsubsection*{ATTITUDES \& VALUES:}
+\begin{itemize}
+    \item Understand AI as a tool for innovation, not just automation.
+    \item Reflect on ethical considerations: privacy, bias, and accountability.
+\end{itemize}
+
+% --- EU Connection ---
+\begin{eurobox}
+\begin{itemize}
+    \item \textbf{Digital Transformation:} Developing essential digital competences for future citizens.
+    \item \textbf{Sustainability:} Exploring how AI can solve ecological problems (Green Deal).
+    \item \textbf{Ethics:} Promoting responsible AI use and understanding algorithmic bias.
+\end{itemize}
+\end{eurobox}
+
+\newpage
+% --- Resources ---
+\section{Resources and Tools}
+\begin{itemize}
+    \item \textbf{Simulations:} Teachable Machine, Quick, Draw!.
+    \item \textbf{AI Tools:} ChatGPT, Gemini (for research/prompts).
+    \item \textbf{Materials:} Matching Game Cards, Projector, Computers.
+    \item \textbf{Collaboration:} Padlet, PowerPoint.
+\end{itemize}
+
+% --- Activity Overview ---
+\section*{Activity Overview}
+\begingroup
+\small
+\begin{tabularx}{\textwidth}{|l|l|L|}
+    \hline
+    \rowcolor{SmaileLightBlue} \textbf{Activity} & \textbf{Time} & \textbf{Description} \\ \hline
+    Intro & 15 min & \textbf{What is AI?} Defining AI vs. Human Intelligence. Debunking myths. \\ \hline
+    1 & 40 min & \textbf{The "Black Box":} Training models with Teachable Machine. Playing "Quick, Draw!" to see neural nets in action. \\ \hline
+    2 & 30 min & \textbf{Real World:} Matching Game (AI Types vs. Problems). Case studies in ecology/health. \\ \hline
+    3 & 35 min & \textbf{Solve a Problem:} Design challenge. Teams propose an AI solution for sustainability. \\ \hline
+    Reflect & 15 min & \textbf{Evaluation:} Self-assessment rubric and class discussion on ethics. \\ \hline
+\end{tabularx}
+\endgroup
+
+% --- Activities ---
+\section{Introduction: What is AI?}
+\textbf{Goal:} Establish a clear definition.
+\begin{itemize}
+    \item \textbf{Discussion:} "What tasks are easy for you but hard for a robot?"
+    \item \textbf{Concept:} AI is not magic; it is a system that learns patterns from data.
+\end{itemize}
+
+\section{Activity 1: The "Black Box" of Machine Learning}
+\textbf{Goal:} Experiential learning.
+\begin{itemize}
+    \item \textbf{Teachable Machine:} Students train a model to recognize specific gestures or sounds. They see how "more data" improves accuracy.
+    \item \textbf{Quick, Draw!:} Students interact with a neural network that guesses their drawings.
+    \item \textbf{Key Takeaway:} Machines learn from examples (training data).
+\end{itemize}
+
+\section{Activity 2: AI in the Real World}
+\textbf{Goal:} Application of knowledge.
+\begin{itemize}
+    \item \textbf{Matching Game:} Match the AI Technology (e.g., Computer Vision) to the Use Case (e.g., Sorting recycling).
+    \item \textbf{Discussion:} How does Netflix know what you want to watch? (Recommender Systems).
+\end{itemize}
+
+\section{Activity 3: Solve a Problem with AI}
+\textbf{Goal:} Innovation and design.
+\begin{itemize}
+    \item \textbf{Challenge:} Choose a sustainability problem (e.g., plastic waste, energy usage).
+    \item \textbf{Solution:} Design an AI concept to solve it.
+    \item \textbf{Pitch:} "We will use [AI Type] to [Action] in order to [Goal]."
+    \item \textbf{Ethics Check:} Identify potential risks (privacy, cost).
+\end{itemize}
+
+\section{Reflection and Evaluation}
+\textbf{Goal:} Critical reflection.
+\begin{itemize}
+    \item \textbf{Self-Assessment:} Complete the provided rubric.
+    \item \textbf{Discussion:} "Do we trust AI to make important decisions?"
+    \item \textbf{Future:} How will AI change the careers students are interested in?
+\end{itemize}
+
+\end{document}

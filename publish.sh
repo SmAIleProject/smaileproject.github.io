@@ -33,7 +33,9 @@ fi
 # 4. Perform the Snapshot
 echo "📦 Creating snapshot..."
 git checkout $PUBLIC_BRANCH
-git checkout $WORK_BRANCH -- . # Overwrite everything in public with files from main
+git rm -r --quiet --ignore-unmatch .
+git checkout $WORK_BRANCH -- .
+git rm -r --quiet --ignore-unmatch latex
 
 # 5. Review step
 echo "-------------------------------------------------------"
@@ -48,7 +50,7 @@ fi
 
 # 6. Commit and Push
 read -p "Enter a public commit message (e.g., 'Update v1.2'): " commit_msg
-git add .
+git add -A
 git commit -m "$commit_msg"
 echo "📤 Pushing to GitHub..."
 git push $REMOTE_NAME $PUBLIC_BRANCH:$REMOTE_BRANCH

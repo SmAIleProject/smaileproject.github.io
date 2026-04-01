@@ -1,0 +1,171 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage{lato}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in, headheight=1.5cm, headsep=0.5cm, footskip=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\tcbuselibrary{skins, breakable}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% --- Colors (Theme: Orange for Training) ---
+\definecolor{SmaileOrange}{HTML}{ED7D31}
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileGreen}{HTML}{92D050}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightOrange}{HTML}{FEF3E9}
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+
+% --- Settings ---
+\tcbset{colback=white, colframe=SmaileGray, fonttitle=\bfseries}
+\hypersetup{colorlinks=true, linkcolor=SmaileOrange, urlcolor=SmaileOrange}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.2cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}}
+\fancyfoot[R]{\footnotesize Page \thepage}
+
+% --- Title Formats ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{SmaileOrange}}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SmaileGray}}{Activity \thesubsection:}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{SmaileGray}}{}{0em}{}
+
+% --- Boxes ---
+\newtcolorbox{keyinfobox}{colback=SmaileLightOrange, colframe=SmaileOrange, title=Key Information, fonttitle=\bfseries\color{SmaileOrange}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}}
+\newtcolorbox{eurobox}{colback=SmaileLightBlue, colframe=SmaileBlue, title=European Dimension / Erasmus+ Connection, fonttitle=\bfseries\color{SmaileBlue}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}, breakable}
+
+\begin{document}
+
+\title{\textbf{\color{SmaileOrange}Training AI: Science \& Data}}
+\author{SMaiLE Project}
+\date{}
+\maketitle
+\thispagestyle{plain}
+
+% --- Key Info ---
+\begin{keyinfobox}
+    \begin{description}[leftmargin=*, labelindent=0pt]
+        \item[\bfseries\color{SmaileOrange} Target Group:] 8 - 12 y.o.
+        \item[\bfseries\color{SmaileOrange} Duration:] 4-5 lessons (45 min each)
+    \end{description}
+    \textbf{Key Learning Goals:}
+    \begin{enumerate}
+        \item \textbf{Machine Learning:} Understand training, testing, and datasets.
+        \item \textbf{Scientific Inquiry:} Collect and label real-world data (traffic signs).
+        \item \textbf{Ethics:} Identify bias and limitations in AI models.
+        \item \textbf{Collaboration:} Share data internationally via eTwinning.
+    \end{enumerate}
+\end{keyinfobox}
+
+% --- Outcomes ---
+\section*{Learning Outcomes}
+By the end of the project, students will be able to:
+
+\subsubsection*{KNOWLEDGE \& UNDERSTANDING:}
+\begin{itemize}
+    \item Describe how machine learning works (training/testing).
+    \item Understand AI applications in image recognition.
+    \item Recognize ethical considerations like trust and responsibility.
+\end{itemize}
+
+\subsubsection*{SKILLS \& ABILITIES:}
+\begin{itemize}
+    \item Use Teachable Machine to create AI models.
+    \item Collect, label, and organize datasets.
+    \item Analyze AI errors compared to human reasoning.
+\end{itemize}
+
+\subsubsection*{ATTITUDES \& VALUES:}
+\begin{itemize}
+    \item Appreciate the combination of human insight and technology.
+    \item Demonstrate openness to different cultural perspectives.
+\end{itemize}
+
+% --- EU Connection ---
+\begin{eurobox}
+\begin{itemize}
+    \item \textbf{Democracy \& Inclusion:} Equal contribution to shared datasets.
+    \item \textbf{Cultural Awareness:} Adapting AI to regional differences (e.g., traffic signs).
+    \item \textbf{Digital Responsibility:} Learning GDPR and ethical data use.
+\end{itemize}
+\end{eurobox}
+
+\newpage
+% --- Resources ---
+\section{Resources and Tools}
+\begin{itemize}
+    \item \textbf{Digital Tools:} Teachable Machine, eTwinning/TwinSpace, Padlet.
+    \item \textbf{Hardware:} Tablets/Cameras, Laptops.
+    \item \textbf{Materials:} AI-generated face photos (Att 1.1), Traffic Sign images.
+\end{itemize}
+
+% --- Activity Overview ---
+\section*{Activity Overview}
+\begingroup
+\small
+\begin{tabularx}{\textwidth}{|l|l|L|}
+    \hline
+    \rowcolor{SmaileLightOrange} \textbf{Activity} & \textbf{Time} & \textbf{Description} \\ \hline
+    Intro & 20 min & \textbf{Motivation:} Watching AI "bloopers" (recognition fails). Discussion on why AI makes mistakes. \\ \hline
+    1 & 45 min & \textbf{Many Faces:} Classifying faces without tech. Discussing human vs. machine perception. \\ \hline
+    2 & 45 min & \textbf{Traffic Signs:} Collecting photos of local signs. Categorizing and uploading to eTwinning. \\ \hline
+    3 & 45 min & \textbf{Training:} Using Teachable Machine to train a model. Testing with international images. \\ \hline
+    4 & 45 min & \textbf{Ethics:} Debate "Can AI replace humans?". Analyzing errors. Reflection. \\ \hline
+\end{tabularx}
+\endgroup
+
+% --- Activities ---
+\section{Introduction: AI Failures}
+\textbf{Goal:} Understand AI isn't perfect.
+\begin{itemize}
+    \item \textbf{Video:} "Funny Object Recognition Fails".
+    \item \textbf{Discussion:} "Which mistake surprised you?"
+    \item \textbf{Concept:} AI is only as good as the data you give it.
+\end{itemize}
+
+\section{Activity 1: Many Faces, One World}
+\textbf{Goal:} Compare human and machine vision.
+\begin{itemize}
+    \item \textbf{Task:} Group photos of diverse people based on criteria.
+    \item \textbf{Discussion:} Humans see "culture" or "gender"; machines see "pixels" and "patterns".
+\end{itemize}
+
+\section{Activity 2: Exploring Traffic Signs}
+\textbf{Goal:} Data collection.
+\begin{itemize}
+    \item \textbf{Field Work:} Photograph local traffic signs.
+    \item \textbf{Collaboration:} Upload to eTwinning to share with partner schools.
+    \item \textbf{Analysis:} Are "Stop" signs the same in every country?
+\end{itemize}
+
+\section{Activity 3: Training the AI Model}
+\textbf{Goal:} Practical Machine Learning.
+\begin{itemize}
+    \item \textbf{Tool:} Teachable Machine.
+    \item \textbf{Step 1:} Create classes (e.g., "Warning Signs", "Regulatory Signs").
+    \item \textbf{Step 2:} Upload images and train.
+    \item \textbf{Step 3:} Test with a sign from a partner country. Did it work?
+\end{itemize}
+
+\section{Activity 4: Ethics \& Reflection}
+\textbf{Goal:} Critical thinking.
+\begin{itemize}
+    \item \textbf{Debate:} "Can AI replace a lab scientist?"
+    \item \textbf{Reflection:} Share thoughts on Padlet.
+    \item \textbf{Output:} Digital reflection on the importance of human judgment.
+\end{itemize}
+
+\end{document}

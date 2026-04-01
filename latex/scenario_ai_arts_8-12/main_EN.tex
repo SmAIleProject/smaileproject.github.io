@@ -1,0 +1,164 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage{lato}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in, headheight=1.5cm, headsep=0.5cm, footskip=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\tcbuselibrary{skins, breakable}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% --- Colors (Theme: Pink for Arts) ---
+\definecolor{SmailePink}{HTML}{EC4899}
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileGreen}{HTML}{92D050}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightPink}{HTML}{FDF2F8}
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+
+% --- Settings ---
+\tcbset{colback=white, colframe=SmaileGray, fonttitle=\bfseries}
+\hypersetup{colorlinks=true, linkcolor=SmailePink, urlcolor=SmailePink}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.2cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}}
+\fancyfoot[R]{\footnotesize Page \thepage}
+
+% --- Title Formats ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{SmailePink}}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SmaileGray}}{Week \thesubsection:}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{SmaileGray}}{}{0em}{}
+
+% --- Boxes ---
+\newtcolorbox{keyinfobox}{colback=SmaileLightPink, colframe=SmailePink, title=Key Information, fonttitle=\bfseries\color{SmailePink}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}}
+\newtcolorbox{eurobox}{colback=SmaileLightBlue, colframe=SmaileBlue, title=European Dimension / Erasmus+ Connection, fonttitle=\bfseries\color{SmaileBlue}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}, breakable}
+
+\begin{document}
+
+\title{\textbf{\color{SmailePink}Virtual Art Exhibition}}
+\author{SMaiLE Project}
+\date{}
+\maketitle
+\thispagestyle{plain}
+
+% --- Key Info ---
+\begin{keyinfobox}
+    \begin{description}[leftmargin=*, labelindent=0pt]
+        \item[\bfseries\color{SmailePink} Target Group:] 8 - 12 y.o.
+        \item[\bfseries\color{SmailePink} Duration:] 4 Weeks (2 sessions/week)
+    \end{description}
+    \textbf{Key Learning Goals:}
+    \begin{enumerate}
+        \item \textbf{Creative Exploration:} Use digital and AI tools to create drawings and music.
+        \item \textbf{Art History:} Learn about styles of famous artists (e.g., Van Gogh, Miró).
+        \item \textbf{Comparison:} Compare human-made art with AI-generated art.
+        \item \textbf{Exhibition:} Showcase work in a virtual class gallery.
+    \end{enumerate}
+\end{keyinfobox}
+
+% --- Outcomes ---
+\section*{Learning Outcomes}
+By the end of the project, students will be able to:
+
+\subsubsection*{KNOWLEDGE \& UNDERSTANDING:}
+\begin{itemize}
+    \item Recognize styles and colors used by famous artists.
+    \item Understand how AI tools can assist in creating images and music.
+    \item Understand how music influences the perception of visual art.
+\end{itemize}
+
+\subsubsection*{SKILLS \& ABILITIES:}
+\begin{itemize}
+    \item Create digital artwork based on specific artistic styles.
+    \item Use AI prompts to generate media and compare it with manual creations.
+    \item Present work digitally using tools like Padlet or Canva.
+\end{itemize}
+
+\subsubsection*{ATTITUDES \& VALUES:}
+\begin{itemize}
+    \item Develop curiosity about the intersection of art and technology.
+    \item Appreciate diverse forms of expression.
+    \item Collaborate effectively in teams to curate an exhibition.
+\end{itemize}
+
+% --- EU Connection ---
+\begin{eurobox}
+\begin{itemize}
+    \item \textbf{Digital Creativity:} Merging artistic heritage with modern AI tools.
+    \item \textbf{Cultural Heritage:} Exploring famous European artists.
+    \item \textbf{Inclusion:} Allowing students of all abilities to express themselves through technology.
+\end{itemize}
+\end{eurobox}
+
+\newpage
+% --- Resources ---
+\section{Resources and Tools}
+\begin{itemize}
+    \item \textbf{Visual Art:} Canva, Paint, Artguru, Leonardo AI.
+    \item \textbf{Music:} Suno AI, Google MusicLM.
+    \item \textbf{Presentation:} Padlet (Virtual Gallery).
+    \item \textbf{Hardware:} Projector, Tablets/Laptops.
+\end{itemize}
+
+% --- Activity Overview ---
+\section*{Activity Overview}
+\begingroup
+\small
+\begin{tabularx}{\textwidth}{|l|l|L|}
+    \hline
+    \rowcolor{SmaileLightPink} \textbf{Week} & \textbf{Theme} & \textbf{Activities} \\ \hline
+    Week 1 & Intro to Art & \textbf{Famous Artists:} Exploring styles. \textbf{Intro to AI:} How can computers "paint"? \\ \hline
+    Week 2 & Creation & \textbf{Digital Art:} Creating art in a master's style. \textbf{AI Art:} Generating similar art via prompts. Comparison. \\ \hline
+    Week 3 & Music & \textbf{Soundtracks:} Using AI to generate music that matches the artwork's mood. \\ \hline
+    Week 4 & Exhibition & \textbf{Virtual Gallery:} Uploading to Padlet. Presentations and Reflection. \\ \hline
+\end{tabularx}
+\endgroup
+
+% --- Activities ---
+\section{Week 1: Introduction to Art and AI}
+\textbf{Goal:} Understand artistic styles.
+\begin{itemize}
+    \item \textbf{Slideshow:} Present paintings by Van Gogh, Kandinsky, Miró.
+    \item \textbf{Discussion:} "How do these colors make you feel?" "What shapes do you see?"
+    \item \textbf{AI Intro:} Watch a video on AI image generation. Discuss: "Can a robot be an artist?"
+\end{itemize}
+
+\section{Week 2: Drawing and Generating}
+\textbf{Goal:} Human vs. Machine creativity.
+\begin{itemize}
+    \item \textbf{Human Creation:} Students use Paint/Canva to create a drawing inspired by a famous artist.
+    \item \textbf{AI Creation:} Students write a text prompt describing their drawing to an AI tool.
+    \item \textbf{Compare:} Use a Venn Diagram to spot similarities and differences between the two.
+\end{itemize}
+
+\section{Week 3: Music and Atmosphere}
+\textbf{Goal:} Multi-sensory art.
+\begin{itemize}
+    \item \textbf{Prompting Music:} Students use AI music generators (like Suno) to create a 30-second clip that matches the "mood" of their painting.
+    \item \textbf{Selection:} Teams vote on the best track for their artwork.
+\end{itemize}
+
+\section{Week 4: Virtual Exhibition}
+\textbf{Goal:} Celebration and Reflection.
+\begin{itemize}
+    \item \textbf{Setup:} Upload Human Art, AI Art, and Music to Padlet.
+    \item \textbf{Gallery Walk:} The class views the digital gallery.
+    \item \textbf{Presentation:} Groups share their "Artist Statement."
+    \item \textbf{Reflection:} Fill out assessment rubrics (included in attachments).
+\end{itemize}
+
+\end{document}
