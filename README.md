@@ -23,7 +23,6 @@ Shared site assets:
 LaTeX source material:
 
 - `latex/scenario_*/`: editable LaTeX source folders for each scenario
-- `latex/import_zips/`: archived ZIP exports/imports for Overleaf
 
 Publishing support:
 
@@ -90,7 +89,6 @@ Current structure:
 - `latex/scenario_<name>/main_FR.tex`, `main_ES.tex`, `main_CRO.tex`: translation placeholders or translations
 - `latex/scenario_<name>/pamphlet_FR.tex`, `pamphlet_ES.tex`, `pamphlet_CRO.tex`: translation placeholders or translations
 - `latex/scenario_<name>/smaile_brand_assets/`: logos and shared branding files required by that scenario project
-- `latex/import_zips/*.zip`: original or regenerated Overleaf import/export ZIP archives
 
 Important:
 
@@ -150,6 +148,15 @@ pdfs/scenario_bite_future_13-16_document.pdf
 pdfs/scenario_bite_future_13-16_pamphlet.pdf
 ```
 
+### Optional: create a ZIP for Overleaf import
+
+If you prefer importing a ZIP instead of uploading a folder, create it from inside the scenario directory:
+
+```bash
+cd latex/scenario_bite_future_13-16
+zip -rq ../../scenario_bite_future_13-16_overleaf.zip .
+```
+
 ## Adding a new scenario LaTeX source
 
 Recommended approach:
@@ -158,7 +165,7 @@ Recommended approach:
 2. Update `main_EN.tex` and `pamphlet_EN.tex`.
 3. Leave unused translation files empty until translations are available.
 4. Keep branding files in that scenario folder so the project stays uploadable to Overleaf as a self-contained unit.
-5. If needed, create or update the archived ZIP in `latex/import_zips/`.
+5. Create a temporary ZIP only when needed for Overleaf import.
 
 ## Publishing
 
