@@ -1,0 +1,184 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[T1]{fontenc}
+\usepackage{lato}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in, headheight=1.5cm, headsep=0.5cm, footskip=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames, svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+\tcbuselibrary{skins, breakable}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+% --- Colors (Theme: Purple for Debate) ---
+\definecolor{SmailePurple}{HTML}{8B5CF6}
+\definecolor{SmaileBlue}{HTML}{00AEEF}
+\definecolor{SmaileGreen}{HTML}{92D050}
+\definecolor{SmaileGray}{HTML}{595959}
+\definecolor{SmaileLightPurple}{HTML}{F3E8FF}
+\definecolor{SmaileLightBlue}{HTML}{E7F7FE}
+
+% --- Settings ---
+\tcbset{colback=white, colframe=SmaileGray, fonttitle=\bfseries}
+\hypersetup{colorlinks=true, linkcolor=SmailePurple, urlcolor=SmailePurple}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.2cm]{smaile_brand_assets/Logo_Co-founded_by_EU.jpeg}}
+\fancyhead[R]{\includegraphics[height=1.2cm]{smaile_brand_assets/logo_smaile_transparentbg_no_smaile.png}}
+\fancyfoot[R]{\footnotesize Page \thepage}
+
+% --- Title Formats ---
+\titleformat{\section}{\normalfont\Large\bfseries\color{SmailePurple}}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{SmaileGray}}{Activity \thesubsection:}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\color{SmaileGray}}{}{0em}{}
+
+% --- Boxes ---
+\newtcolorbox{keyinfobox}{colback=SmaileLightPurple, colframe=SmailePurple, title=Key Information, fonttitle=\bfseries\color{SmailePurple}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}}
+\newtcolorbox{eurobox}{colback=SmaileLightBlue, colframe=SmaileBlue, title=European Dimension / Erasmus+ Connection, fonttitle=\bfseries\color{SmaileBlue}, enhanced, attach boxed title to top left={yshift=-2mm, xshift=3mm}, breakable}
+
+\begin{document}
+
+\title{\textbf{\color{SmailePurple}Debate}}
+\author{SMaiLE Project}
+\date{}
+\maketitle
+\thispagestyle{plain}
+
+\begin{keyinfobox}
+    \begin{description}[leftmargin=*, labelindent=0pt]
+        \item[\bfseries\color{SmailePurple} Target Group:] 4 - 7 y.o.
+        \item[\bfseries\color{SmailePurple} Duration:] 40 minutes
+    \end{description}
+    \textbf{Key Learning Goals:}
+    \begin{enumerate}
+        \item \textbf{Critical Thinking:} Begin to think about fairness, kindness, and big ethical questions about technology.
+        \item \textbf{Speaking and Listening:} Practise sharing ideas clearly and listening respectfully to others.
+        \item \textbf{Collaboration:} Work with a partner to talk, share, and create together.
+        \item \textbf{Creative Expression:} Use drawing and design to express feelings and opinions.
+    \end{enumerate}
+\end{keyinfobox}
+
+\section*{Learning Outcomes}
+Students will be able to:
+
+\subsubsection*{KNOWLEDGE \& UNDERSTANDING:}
+\begin{itemize}
+    \item Understand what robots and Artificial Intelligence are in simple terms.
+    \item Recognize that people can have different ideas or opinions.
+    \item Identify some things a robot can do and some things only a person can do.
+    \item Understand that it is important to ask if something is fair, kind, or helpful.
+\end{itemize}
+
+\subsubsection*{SKILLS \& ABILITIES:}
+\begin{itemize}
+    \item Listen carefully to a story and follow along.
+    \item Share their own thoughts clearly using sentence starters.
+    \item Work with a partner to discuss ideas using Think--Pair--Share.
+    \item Agree or disagree respectfully and give a simple reason.
+    \item Express ideas creatively through drawing and facial expressions.
+\end{itemize}
+
+\subsubsection*{ATTITUDES \& VALUES:}
+\begin{itemize}
+    \item Show curiosity about how robots work and what they can do.
+    \item Respect other children's ideas, even if they are different.
+    \item Develop empathy by thinking about how others feel.
+    \item Begin to think about using technology in a kind and fair way.
+\end{itemize}
+
+\begin{eurobox}
+\begin{itemize}
+    \item \textbf{Fairness and Inclusion:} Encourages discussion around kindness, fairness, and respect.
+    \item \textbf{Early Digital Literacy:} Introduces ethical awareness linked to responsible technology use.
+    \item \textbf{Active Citizenship:} Promotes listening, cooperation, and respectful dialogue in the classroom.
+\end{itemize}
+\end{eurobox}
+
+\newpage
+\section{Resources and Tools}
+\begin{itemize}
+    \item \textbf{Story Resources:} ``My Teacher is a Robot'' and other age-appropriate robot stories or videos.
+    \item \textbf{Visuals:} Simple pictures of real robots in schools, hospitals, or homes.
+    \item \textbf{Materials:} Printed story or digital display, robot face templates, coloring pencils or crayons.
+    \item \textbf{Optional Props:} Agree/disagree signs and open floor space for movement.
+\end{itemize}
+
+\subsubsection*{Useful Links}
+\begin{itemize}
+    \item \href{https://www.youtube.com/watch?v=l25nYpnXsZ4&utm_source=chatgpt.com}{Robot story video 1}
+    \item \href{https://www.youtube.com/watch?v=_CP62grb3-c&utm_source=chatgpt.com}{Robot story video 2}
+    \item \href{https://www.freechildrenstories.com/the-robot-bedtime-book-1?utm_source=chatgpt.com}{The Robot Bedtime Book}
+    \item \href{https://www.mathlearningcenter.org/sites/default/files/pdfs/stories/brpk-7mar-3sixsillyrobots.pdf?utm_source=chatgpt.com}{Six Silly Robots PDF}
+    \item \href{https://www.ohmytales.com/t/robot/?utm_source=chatgpt.com}{OhMyTales robot stories collection}
+    \item \href{https://www.storyjumper.com/book/read/21812868/ROBBIE-THE-ROBOT?utm_source=chatgpt.com}{Robbie the Robot story}
+\end{itemize}
+
+\section{Working Methods}
+\begin{itemize}
+    \item \textbf{Storytelling and Discussion:} Reading a simple story to spark thinking.
+    \item \textbf{Think--Pair--Share:} Helping children reflect and talk with support.
+    \item \textbf{Mini-Debate Warm-Up:} Agree/disagree activities using body movement or signs.
+    \item \textbf{Creative Expression:} Drawing and coloring to represent opinions and emotions.
+    \item \textbf{Display and Reflect:} Creating a classroom wall that shows diverse views.
+\end{itemize}
+
+\section*{Activity Overview}
+\begingroup
+\small
+\begin{tabularx}{\textwidth}{|l|l|L|}
+    \hline
+    \rowcolor{SmaileLightPurple} \textbf{Duration} & \textbf{Activity} & \textbf{Description} \\ \hline
+    5 min & Introduction and Motivation & Introduce debate as sharing ideas, explain robots simply, and read ``My Teacher is a Robot''. \\ \hline
+    10 min & Think--Pair--Share & Children reflect quietly, talk with a partner, and share what they liked or found strange. \\ \hline
+    10 min & Mini-Debate & Children respond to simple agree/disagree statements and give reasons. \\ \hline
+    15 min & Evaluation and Creative Task & Children color and design a robot teacher template and explain their choices. \\ \hline
+\end{tabularx}
+\endgroup
+
+\section{Introduction and Motivation}
+\textbf{Goal:} Introduce debate and big thinking questions about fairness.
+\begin{itemize}
+    \item Explain that people can have different opinions and still listen kindly.
+    \item Introduce robots as machines that can help people in different places.
+    \item Read the simple story ``My Teacher is a Robot'' aloud.
+    \item Ask whether a robot teacher would feel the same as a real teacher.
+\end{itemize}
+
+\section{Research and Learning}
+\textbf{Goal:} Think about what a robot teacher can and cannot do.
+\begin{itemize}
+    \item Discuss the story and ask what the robot did well.
+    \item Notice what felt strange or missing, such as playfulness or empathy.
+    \item Use Think--Pair--Share with prompts such as ``I think a robot teacher is \_\_\_ because \_\_\_.'' 
+    \item Record ideas on the board under headings like ``What we liked'' and ``What felt strange''.
+\end{itemize}
+
+\section{Creative Application}
+\textbf{Goal:} Let children express and justify an opinion.
+\begin{itemize}
+    \item Read simple agree/disagree statements aloud, for example: ``A robot teacher can help you learn just as well as a person.''
+    \item Children respond with movement, thumbs up/down, or printed signs.
+    \item Encourage reasons such as ``I agree because...'' or ``I disagree because...''.
+    \item Children then color a robot template and choose an expression such as happy, sad, helpful, or unhelpful.
+\end{itemize}
+
+\section{Reflection and Evaluation}
+\textbf{Goal:} Link creative choices to the debate.
+\begin{itemize}
+    \item Children explain why they made their robot good or bad, happy or sad, helpful or unhelpful.
+    \item Display the finished robots on a wall, for example ``Good Robot Teachers'' vs. ``Bad Robot Teachers''.
+    \item Use the display as a class summary of the debate and a prompt for final reflection.
+\end{itemize}
+
+\end{document}
