@@ -95,46 +95,32 @@ Important:
 - The `latex/` directory is intentionally excluded from the published site.
 - These files are versioned in git for collaboration, but they must not be publicly downloadable from GitHub Pages.
 
-## Generating a scenario PDF in Overleaf
+## Generating scenario PDFs locally
 
-The LaTeX sources are organized so each `latex/scenario_*` folder can be used as an Overleaf project.
+Recommended local toolchain on Debian:
 
-### Full document
-
-Compile:
-
-```text
-main_EN.tex
+```bash
+sudo apt install texlive-full latexmk
 ```
 
-This produces the full scenario document PDF.
+Each scenario is self-contained in its own folder under `latex/`, so you can compile directly on your machine without Overleaf.
 
-### Pamphlet
+### Manual compilation
 
-Compile:
+Example:
 
-```text
-pamphlet_EN.tex
+```bash
+cd latex/scenario_bite_future_13-16
+latexmk -pdf main_EN.tex
+latexmk -pdf pamphlet_EN.tex
 ```
 
-This produces the pamphlet PDF.
+This produces:
 
-### Overleaf workflow
+- `main_EN.pdf`
+- `pamphlet_EN.pdf`
 
-1. Identify the scenario folder you want to work on, for example:
-
-```text
-latex/scenario_bite_future_13-16/
-```
-
-2. In Overleaf, create a new project.
-3. Upload the entire scenario folder contents:
-   - the `.tex` files
-   - the `smaile_brand_assets/` folder
-4. Set the main file to either `main_EN.tex` or `pamphlet_EN.tex`, depending on which PDF you want to build.
-5. Compile in Overleaf.
-6. Download the resulting PDF.
-7. Save the public output in `pdfs/` using the repository naming convention:
+The public site expects these files to be copied into `pdfs/` with this naming convention:
 
 ```text
 pdfs/scenario_<name>_document.pdf
@@ -148,14 +134,31 @@ pdfs/scenario_bite_future_13-16_document.pdf
 pdfs/scenario_bite_future_13-16_pamphlet.pdf
 ```
 
-### Optional: create a ZIP for Overleaf import
+### Build script
 
-If you prefer importing a ZIP instead of uploading a folder, create it from inside the scenario directory:
+Use the repository helper script from the project root:
 
 ```bash
-cd latex/scenario_bite_future_13-16
-zip -rq ../../scenario_bite_future_13-16_overleaf.zip .
+./build_pdfs.sh <scenario_name> [document|pamphlet|both]
 ```
+
+Examples:
+
+```bash
+./build_pdfs.sh scenario_ai_arts_13-16
+./build_pdfs.sh scenario_ai_arts_13-16 document
+./build_pdfs.sh all both
+```
+
+What it does:
+
+- compiles `main_EN.tex` and/or `pamphlet_EN.tex` with `latexmk`
+- leaves the generated PDFs in the scenario folder
+- copies the public outputs into `pdfs/` using the correct website filenames
+
+### Overleaf fallback
+
+If local compilation is unavailable, each `latex/scenario_*` folder can still be uploaded as a standalone Overleaf project.
 
 ## Adding a new scenario LaTeX source
 
@@ -164,8 +167,7 @@ Recommended approach:
 1. Copy the closest existing scenario folder in `latex/`.
 2. Update `main_EN.tex` and `pamphlet_EN.tex`.
 3. Leave unused translation files empty until translations are available.
-4. Keep branding files in that scenario folder so the project stays uploadable to Overleaf as a self-contained unit.
-5. Create a temporary ZIP only when needed for Overleaf import.
+4. Keep branding files in that scenario folder so the project stays self-contained for local or Overleaf compilation.
 
 ## Publishing
 
