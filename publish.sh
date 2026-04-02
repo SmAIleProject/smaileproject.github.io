@@ -34,8 +34,10 @@ fi
 echo "📦 Creating snapshot..."
 git checkout $PUBLIC_BRANCH
 git rm -r --quiet --ignore-unmatch .
-git checkout $WORK_BRANCH -- .
+git clean -fdq
+git restore --source=$WORK_BRANCH --staged --worktree .
 git rm -r --quiet --ignore-unmatch latex
+git clean -fdq latex
 
 # 5. Review step
 echo "-------------------------------------------------------"
