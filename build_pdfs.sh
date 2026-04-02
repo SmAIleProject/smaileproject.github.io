@@ -66,6 +66,7 @@ compile_target() {
     )
 
     cp "$scenario_dir/$out_pdf" "$dest_pdf"
+    rm -f "$scenario_dir/$out_pdf"
     echo "    Copied to ${dest_pdf#$ROOT_DIR/}"
 }
 
