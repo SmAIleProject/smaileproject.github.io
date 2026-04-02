@@ -53,11 +53,20 @@ read -p "Enter a public commit message (e.g., 'Update v1.2'): " commit_msg
 git add -A
 git commit -m "$commit_msg"
 echo "📤 Pushing to GitHub..."
-git push $REMOTE_NAME $PUBLIC_BRANCH:$REMOTE_BRANCH
+if git push --force-with-lease $REMOTE_NAME $PUBLIC_BRANCH:$REMOTE_BRANCH; then
+    push_ok=1
+else
+    push_ok=0
+fi
 
 # 7. Safety: Return to Work Branch
 echo "✅ Done! Returning to '$WORK_BRANCH' for safety."
 git checkout $WORK_BRANCH
 
 echo "-------------------------------------------------------"
-echo "🌐 Your site should be live at: https://smaileproject.github.io"
+if [ "$push_ok" = "1" ]; then
+  echo "🌐 Your site should be live at: https://smaileproject.github.io"
+else
+  echo "❌ Push failed. Your site was not updated."
+  exit 1
+fi
